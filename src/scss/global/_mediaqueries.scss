@@ -1,0 +1,24 @@
+
+$breakpoints: (
+    "phone": 400px, // phone = de 0 à 400px
+    "tablet": 1000px,  // tablet = de 400 à 1000px
+    "desktop": 1600px, // desktop = de 1000 à 1600px / très grand écran = >1600px
+);
+
+@mixin media_min($key) {
+    @media (min-width: map-get($breakpoints,$key)) {
+        &{ @content; }
+    }
+}
+
+@mixin media_max($key) {
+    @media (max-width: map-get($breakpoints,$key)) {
+        &{ @content; }
+    }
+}
+
+@mixin media_minmax($key_min, $key_max) {
+    @media (min-width: map-get($breakpoints,$key_min)) and (max-width: map-get($breakpoints,$key_max)) {
+        &{ @content; }
+    }
+}

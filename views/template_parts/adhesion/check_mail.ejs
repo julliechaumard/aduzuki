@@ -1,0 +1,26 @@
+    <!-- ---------------------------------- -->
+    <!-- FORMULAIRE de vérification du mail -->
+    <!-- ---------------------------------- -->
+
+    <form action="" method="post" class="">
+      
+        <div class="">
+          <label for="email">Votre adresse de courrier électronique: </label>
+          <input type="email" name="email" id="email" value="<% if (locals.mail) { %><%= mail %><% }; %>"required>
+        </div>
+
+        <div class="">
+          <label for="check_prof">Êtes-vous professeur ou souhaitez-vous le devenir?</label>
+          <input type="checkbox" name="check_prof" id="check_prof">
+        </div>
+
+        <!-- ---------------------------------- -->
+        <!-- CLIQUEZ SUR BOUTON ADHÉRER -->
+        <!-- ---------------------------------- -->
+        <div class="">
+          <input type="submit" value="ADHÉRER">
+        </div>
+    </form>
+
+
+    

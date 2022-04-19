@@ -1,0 +1,36 @@
+/* CSS de base */
+body, div, h1, h2, h3, h4, h5, h6, p, ul, ol, li, dl, dt, dd, img, form, fieldset, blockquote, main, article, aside, section {
+  margin: 0px 0px 0px 0px;
+  padding: 0px 0px 0px 0px;
+}
+
+li, ul {
+  list-style: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* SCSS */
+/* VARIABLES */
+/* COLORS */
+.txt_color_violet {
+  color: #8224E3;
+}
+
+p {
+  color: green;
+  font-size: 18px;
+}
+
+.prof_diplome_hidden {
+  visibility: hidden;
+}
+
+.prof_diplome_visible {
+  visibility: visible;
+}
+
+/*# sourceMappingURL=app.css.map */

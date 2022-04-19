@@ -1,0 +1,11 @@
+p{
+    color: purple;
+}
+
+.visibility_hidden{
+    visibility: hidden;
+}
+
+.visibility_visible{
+    visibility: visible;
+}

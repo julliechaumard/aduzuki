@@ -1,0 +1,28 @@
+<%- include('../template_parts/head')%>
+
+<body>
+    <%- include('../template_parts/header')%>
+    
+
+   
+    <p>C'est le body</p>
+
+
+    <% if (locals.err_mail_form_adhesion) { %>
+      <div><p><%= err_mail_form_adhesion %></p></div>
+    <% }; %>
+    <% if (locals.complete_mail_form_adhesion) { %>
+      <div><p><%= complete_mail_form_adhesion %></p></div>
+    <% }; %>
+    
+    <!-- ---------------------------------- -->
+    <!-- FORMULAIRE de vérification du mail -->
+    <!-- ---------------------------------- -->
+
+    <%- include('../template_parts/adhesion/check_mail')%>
+
+
+
+</body>
+
+<%- include('../template_parts/footer')%>

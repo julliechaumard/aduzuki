@@ -1,0 +1,48 @@
+{
+  "name": "aduzuki_package",
+  "version": "1.0.0",
+  "description": "Programm des adhésions et des inscriptions de l'association Suzuki",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "app": "nodemon app.js",
+    "scss": "sass --watch src/scss/app.scss public/css/app.css",
+    "start": "npm run app & npm run scss"
+  },
+  "keywords": [
+    "adhesion",
+    "training",
+    "inscription",
+    "googlesheet"
+  ],
+  "author": {
+    "name": "Julie Chaumard",
+    "email": "contact@juliechaumard.paris",
+    "url": "https://www.juliechaumard.paris/skills/"
+  },
+  "bugs": {
+    "email": "contact@juliechaumard.paris"
+  },
+  "license": "CC-BY-NC-SA-2.0-FR",
+  "dependencies": {
+    "body-parser": "^1.19.1",
+    "dotenv": "^16.0.0",
+    "ejs": "^3.1.6",
+    "encoding": "^0.1.13",
+    "express": "^4.17.2",
+    "express-session": "^1.17.2",
+    "fs": "0.0.1-security",
+    "google-spreadsheet": "^3.2.0",
+    "googleapis": "^92.0.0",
+    "lodash": "^4.17.21",
+    "path": "^0.12.7"
+  },
+  "engines": {
+    "node": "10.13.0",
+    "npm": "6.4.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15",
+    "sass": "^1.50.0"
+  }
+}
