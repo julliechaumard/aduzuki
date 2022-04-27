@@ -1,13 +1,22 @@
+main {
+    @include media_min("desktop"){
+        min-height: 400px;
+    }
+    @include media_max("tablet"){
+        min-height: 340px;
+    }
+    @include media_max("phone"){
+        min-height: 230px;
+    }
+}
+
 p {
     color: green;
     font-size: 18px;
 }
 
 
-.prof_diplome_hidden {
-    visibility: hidden;
+.hidden {
+    display: none;
 }
 
-.prof_diplome_visible {
-    visibility: visible;
-}

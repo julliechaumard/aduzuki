@@ -1,0 +1,42 @@
+<%- include('../template_parts/head')%>
+
+<body>
+    <%- include('../template_parts/header')%>
+    
+
+   
+    <p>C'est le body de la page paiement</p>
+
+    <p></p>Montant de votre cotisation annuelle <%= adherent_paiement_montant_adhesion %></p>
+
+    <form action="" method="post">
+        <div class="">
+            <label for="adherent_paiement_montant_don">Vous pouvez ajouter un don pour nous soutenir</label>
+            <input type="number" name="adherent_paiement_montant_don" id="adherent_paiement_montant_don"> <span>Euros</span>
+        </div>
+        <div class="">
+            <input type="submit" value="Valider">
+        </div>
+    </form>
+
+
+    <p>Montant à payer : <%= montant_apayer %></p>
+
+<p>MODE DE PAIEMENT</p>
+
+<div class="">
+    <input type="checkbox" name="check_cb" id="check_cb" onclick="choix_cb()">
+    <label for="check_cb">carte bancaire</label>
+</div>
+
+<div id="paiement_cb" class="hidden">
+    <p>Paiement par CB</p>
+</div>
+
+
+</body>
+
+ <!-- JAVASCRIPT d'EXECUTION -->
+ <script src="/public/js/form_paiement.js"></script>
+
+<%- include('../template_parts/footer')%>

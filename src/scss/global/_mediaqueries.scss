@@ -1,8 +1,8 @@
 
 $breakpoints: (
-    "phone": 400px, // phone = de 0 à 400px
-    "tablet": 1000px,  // tablet = de 400 à 1000px
-    "desktop": 1600px, // desktop = de 1000 à 1600px / très grand écran = >1600px
+    "phone": 400px,
+    "tablet": 1100px,
+    "desktop": 1100px,
 );
 
 @mixin media_min($key) {
@@ -11,6 +11,10 @@ $breakpoints: (
     }
 }
 
+
+/*
+@media (max-width: 9999px)
+*/
 @mixin media_max($key) {
     @media (max-width: map-get($breakpoints,$key)) {
         &{ @content; }

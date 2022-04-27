@@ -1,0 +1,167 @@
+/* CSS */
+/* fonts */
+
+@font-face {
+    font-family: 'cabin_semibolditalic';src: url('../fonts/cabin_semibolditalic.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'cabin_mediumitalic';src: url('../fonts/cabin_mediumitalic.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'cabin_bolditalic';src: url('../fonts/cabin_bolditalic.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'cabin_semibold';src: url('../fonts/cabin_semibold.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'cabin_regular';src: url('../fonts/cabin_regular.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'cabin_medium';src: url('../fonts/cabin_medium.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'cabin_italic';src: url('../fonts/cabin_italic.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'cabin_bold';src: url('../fonts/cabin_bold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'sourceserifpro_semibolditalic';src: url('../fonts/sourceserifpro_semibolditalic.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'sourceserifpro_extralightitalic';src: url('../fonts/sourceserifpro_extralightitalic.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'sourceserifpro_regular';src: url('../fonts/sourceserifpro_regular.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'sourceserifpro_lightitalic';src: url('../fonts/sourceserifpro_lightitalic.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'sourceserifpro_bold';src: url('../fonts/sourceserifpro_bold.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'sourceserifpro_blackitalic';src: url('../fonts/sourceserifpro_blackitalic.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'sourceserifpro_italic';src: url('../fonts/sourceserifpro_italic.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'sourceserifpro_light';src: url('../fonts/sourceserifpro_light.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'sourceserifpro_black';src: url('../fonts/sourceserifpro_black.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'sourceserifpro_semibold';src: url('../fonts/sourceserifpro_semibold.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'sourceserifpro_bolditalic';src: url('../fonts/sourceserifpro_bolditalic.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'sourceserifpro_extralight';src: url('../fonts/sourceserifpro_extralight.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'playfairdisplay_blackitalic';src: url('../fonts/playfairdisplay_blackitalic.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'playfairdisplay_bolditalic';src: url('../fonts/playfairdisplay_bolditalic.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'playfairdisplay_regular';src: url('../fonts/playfairdisplay_regular.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'playfairdisplay_italic';src: url('../fonts/playfairdisplay_italic.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'playfairdisplay_black';src: url('../fonts/playfairdisplay_black.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'playfairdisplay_bold';src: url('../fonts/playfairdisplay_bold.ttf') format('truetype');
+}
+
+
+@font-face {
+    font-family: 'montserrat_extrabolditalic';src: url('../fonts/montserrat_extrabolditalic.ttf') format('truetype');
+}
+@font-face {
+font-family: 'montserrat_semibolditalic';src: url('../fonts/montserrat_semibolditalic.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'montserrat_italic';src: url('../fonts/montserrat_italic.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'montserrat_regular';src: url('../fonts/montserrat_regular.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'montserrat_black';src: url('../fonts/montserrat_black.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'montsermontserrat_extraboldrat_regular';src: url('../fonts/montserrat_extrabold.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'montserrat_extralightitalic';src: url('../fonts/montserrat_extralightitalic.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'montserrat_semibold';src: url('../fonts/montserrat_semibold.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'montserrat_blackitalic';src: url('../fonts/montserrat_blackitalic.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'montserrat_mediumitalic';src: url('../fonts/montserrat_mediumitalic.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'montserrat_bold';src: url('../fonts/montserrat_bold.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'montserrat_thin';src: url('../fonts/montserrat_thin.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'montserrat_extralight';src: url('../fonts/montserrat_extralight.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'montserrat_thinitalic';src: url('../fonts/montserrat_thinitalic.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'montserrat_light';src: url('../fonts/montserrat_light.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'montserrat_bolditalic';src: url('../fonts/montserrat_bolditalic.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'montserrat_medium';src: url('../fonts/montserrat_medium.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'montserrat_lightitalic';src: url('../fonts/montserrat_lightitalic.ttf') format('truetype');
+}
+
+
+@font-face {
+    font-family: 'ubuntu_bold';src: url('../fonts/ubuntu_bold.ttf') format('truetype');
+  }
+  
+  @font-face {
+    font-family: 'ubuntu_courant';src: url('../fonts/ubuntu_courant.ttf') format('truetype');
+  }
+  
+  @font-face {
+    font-family: 'ubuntu_fin';src: url('../fonts/ubuntu_fin.ttf') format('truetype');
+  }
+  @font-face {
+    font-family: 'ubuntu_fin_italic';src: url('../fonts/ubuntu_leger_italic.ttf') format('truetype');
+  }
+  
+  @font-face {
+    font-family: 'ubuntu_leger';src: url('../fonts/ubuntu_leger.ttf') format('truetype');
+  }
+  
+  @font-face {
+    font-family: 'ubuntu_moyen';src: url('../fonts/ubuntu_moyen.ttf') format('truetype');
+  }
+  
+  @font-face {
+    font-family: 'ubuntu_moyen_italique';src: url('../fonts/ubuntu-moyen_italique.ttf') format('truetype');
+}

@@ -85,6 +85,23 @@ const inscriptionRouter = require("./routes/inscriptionRouter");
 
 app.use("/inscription", inscriptionRouter);
 
+/////////////////////////////////////////////////
+// ERREUR d'URL
+/////////////////////////////////////////////////
+// erreur de saisie d'url par le visiteur
+// on le dirige vers une page que l'on veut
+app.use("/*", function(req, res){
+    res.redirect('/inscription/adhesion');
+});
+
+
+/////////////////////////////////////////////////
+// GESTION DES ERREURS
+// CREER UNE PAGE D'ERREUR (erreur 500... pb de serveur)
+/////////////////////////////////////////////////
+
+
+
 
 /////////////////////////////////////////////////
 // PORT D'ÉCOUTE WEB

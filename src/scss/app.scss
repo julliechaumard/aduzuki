@@ -4,12 +4,12 @@
 
 //base
 @import "base/reset";
-
+@import "base/colors";
+@import "base/fonts";
 
 
 //Global
-@import "global/colors";
-@import "global/fonts";
+
 @import "global/mediaqueries";
 
 // vendors
@@ -17,6 +17,8 @@
 // Components
 @import "components/header";
 @import "components/footer";
+@import "components/inputs";
+@import "components/check_mail";
 
 // Modules
 

@@ -48,12 +48,12 @@ let post_verification_mail = function(request, response){
             /* const newSheet = await doc.addSheet({ title: 'onglet1' }); */
         
             const moreRows = await sheet.addRows([
-                { 'ID': '888', 'Nom': request.body.name, 'Mail': request.body.email, 'Categorie': 'prof'  },
+                { 'ID': '888', 'Nom': request.body.name, 'identifiant': request.body.identifiant, 'Categorie': 'prof'  },
               ]);
             
             const rows = await sheet.getRows();
             //console.log(rows);
-            console.log(rows[0].Mail);
+            console.log(rows[0].identifiant);
             console.log("nombre de row : " + sheet.rowCount);
 
             // mettre les mails dans un array
@@ -62,9 +62,9 @@ let post_verification_mail = function(request, response){
             console.log(compteur);
             for (let i=0; i<compteur; i++) {
                 
-                    lesmails[i] = rows[i].Mail;
+                    lesmails[i] = rows[i].identifiant;
                 
-                    console.log(rows[i].Mail);
+                    console.log(rows[i].identifiant);
                     console.log("i = "+ i);
 
             }
@@ -72,8 +72,8 @@ let post_verification_mail = function(request, response){
             console.info(lesmails);
 
             // recherche le mail saisi dans le array des tous les mails
-            console.log(lesmails.includes(request.body.email));
-            if (lesmails.includes(request.body.email) === true){
+            console.log(lesmails.includes(request.body.identifiant));
+            if (lesmails.includes(request.body.identifiant) === true){
                 request.session.form_verification_mail_error = 'Vous ètes défà inscrit';
                 response.redirect('/adhesion/formulaire_adhesion_annuelle');
             } else {

@@ -2,25 +2,27 @@
     <!-- FORMULAIRE de vérification du mail -->
     <!-- ---------------------------------- -->
 
-    <form action="" method="post" class="">
+    <form action="" method="post" class="form_check_mail">
       
-        <div class="">
-          <label for="email">Votre adresse de courrier électronique: </label>
-          <input type="email" name="email" id="email" value="<% if (locals.mail) { %><%= mail %><% }; %>"required>
+        <div class="input_email input_box">
+          <label for="identifiant">Saisissez votre adresse mail</label>
+          <input type="email" name="identifiant" id="identifiant" placeholder="Votre mail est votre identifiant" value="<% if (locals.identifiant) { %><%= identifiant %><% }; %>" required>
         </div>
 
-        <div class="">
-          <label for="check_prof">Êtes-vous professeur ou souhaitez-vous le devenir?</label>
+        <div class="input_checkbox">
           <input type="checkbox" name="check_prof" id="check_prof">
+          <label for="check_prof">Vous êtes professeur Suzuki <br>ou vous souhaitez vous former à la pédagogie Suzuki</label>
         </div>
 
         <!-- ---------------------------------- -->
         <!-- CLIQUEZ SUR BOUTON ADHÉRER -->
         <!-- ---------------------------------- -->
-        <div class="">
-          <input type="submit" value="ADHÉRER">
-        </div>
+
+        <button type="submit">
+          <span class="btn_icone">+</span><span class="btn_texte">ADHÉRER</span>
+        </button>
+
     </form>
 
 
-    
+    <!--  -->

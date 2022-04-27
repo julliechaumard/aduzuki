@@ -6,7 +6,8 @@ const router = express.Router();
 
 const {
     checkMail,
-    post_form_adhesion
+    post_form_adhesion,
+    post_form_montant_total
 } = require("../controllers/adhesionController");
 
 
@@ -27,11 +28,12 @@ router.get('/adhesion', function(req, res) {
         // on peut supprimer le contenu après affichage
         req.session.complete_mail_form_adhesion = undefined;
     }
-    if (req.session.mail) {
-        res.locals.mail = req.session.mail;
+    if (req.session.identifiant) {
+        res.locals.identifiant = req.session.identifiant;
         // on peut supprimer le contenu après affichage
-        req.session.mail = undefined;
+    //    req.session.identifiant = undefined;
     }
+
     res.render('page_templates/formulaire_adhesion_mail');
 });
 
@@ -47,9 +49,8 @@ router.post('/adhesion', checkMail);
 // APRÈS VALIDATION DU MAIL
 /////////////////////////////////////////////////
 router.get('/adhesion_prof', function(req, res) {
-    
-
-    res.locals.mail = req.session.mail;
+    res.locals.identifiant = req.session.identifiant;
+    res.locals.adherent_nom = req.session.adherent_nom;
     res.render('page_templates/formulaire_adhesion_prof');
 });
 
@@ -57,6 +58,25 @@ router.get('/adhesion_prof', function(req, res) {
 // POST ENREGISTRER INFOS DANS GOOGLE SHEET
 /////////////////////////////////////////////////
 router.post('/adhesion_prof', post_form_adhesion);
+
+
+
+/////////////////////////////////////////////////
+// PAGE DE PAIEMENT
+// 
+/////////////////////////////////////////////////
+router.get('/adhesion_paiement', function(req, res) {
+    console.log ("on est dans la ROUTE /adhesion page_templates/adhesion_paiement.ejs");
+    res.locals.identifiant = req.session.identifiant;
+    res.locals.adherent_paiement_montant_adhesion = req.session.adherent_paiement_montant_adhesion
+    res.locals.montant_apayer = req.session.montant_apayer
+    console.log("ROUTER req.session.montant_apayer: ", req.session.montant_apayer)
+    res.render('page_templates/adhesion_paiement.ejs');
+});
+router.post('/adhesion_paiement', post_form_montant_total);
+
+
+
 
 module.exports = router;
 

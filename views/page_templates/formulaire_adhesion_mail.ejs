@@ -1,28 +1,44 @@
 <%- include('../template_parts/head')%>
 
 <body>
-    <%- include('../template_parts/header')%>
-    
 
-   
-    <p>C'est le body</p>
+  <!-- ---------------------------------- -->
+  <!-- HEADER -->
+  <!-- ---------------------------------- -->
+  <%- include('../template_parts/header')%>
 
+  <!-- ---------------------------------- -->
+  <!-- FORMULAIRE de vérification du mail -->
+  <!-- ---------------------------------- -->
 
+  <main>
+
+    <!-- AFFICHAGE DES MESSAGES ERREURS RETOUR DE OPST FORMULAIRE -->
     <% if (locals.err_mail_form_adhesion) { %>
       <div><p><%= err_mail_form_adhesion %></p></div>
     <% }; %>
     <% if (locals.complete_mail_form_adhesion) { %>
       <div><p><%= complete_mail_form_adhesion %></p></div>
     <% }; %>
-    
-    <!-- ---------------------------------- -->
-    <!-- FORMULAIRE de vérification du mail -->
-    <!-- ---------------------------------- -->
-
+      
+    <!-- lE formuaire -->
     <%- include('../template_parts/adhesion/check_mail')%>
 
+  </main>
 
+
+  
+
+
+
+
+
+
+  <!-- ---------------------------------- -->
+  <!-- FOOTER -->
+  <!-- ---------------------------------- -->
+  <%- include('../template_parts/footer')%>
 
 </body>
 
-<%- include('../template_parts/footer')%>
+</html>

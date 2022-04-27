@@ -1,0 +1,27 @@
+.form_check_mail {
+    margin-top: 85px;
+    display: grid;
+    grid-template-columns: 2fr 1fr 2fr;
+    grid-template-rows: auto auto auto;
+    grid-template-areas: 
+    ". input ."
+    ". checkbox checkbox"
+    ". button .";
+    
+    .input_email {
+        grid-area: input;
+        
+    }
+    .input_checkbox {
+        grid-area: checkbox;
+        margin-top: 5px;
+        margin-left: 5px;
+        margin-bottom: 35px;
+    }
+    button {
+        grid-area: button;
+        justify-self: center;
+        ;
+    }
+
+}
