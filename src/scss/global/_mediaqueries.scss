@@ -1,8 +1,7 @@
 
 $breakpoints: (
-    "phone": 400px,
-    "tablet": 1100px,
-    "desktop": 1100px,
+    "phone": 330px,
+    "tablet": 1100px
 );
 
 @mixin media_min($key) {

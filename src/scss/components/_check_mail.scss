@@ -1,5 +1,14 @@
+.erreur {
+    margin-bottom: 70px;
+    text-align: center;
+    p {
+        color: $color_rouge;
+    }
+    
+}
+
+
 .form_check_mail {
-    margin-top: 85px;
     display: grid;
     grid-template-columns: 2fr 1fr 2fr;
     grid-template-rows: auto auto auto;
@@ -21,7 +30,6 @@
     button {
         grid-area: button;
         justify-self: center;
-        ;
     }
 
 }

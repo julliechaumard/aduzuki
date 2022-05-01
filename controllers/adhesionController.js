@@ -65,7 +65,9 @@ const checkMail = async function(req, res){
 
         req.session.identifiant = req.body.identifiant;
         if (lesmails.includes(req.body.identifiant) === true){
-            req.session.err_mail_form_adhesion = 'Vous êtes déjà inscrit';
+            req.session.err_mail_form_adhesion_1 = "Cette adresse Email est déjà inscrite pour les adhésions 2022/2023.";
+            req.session.err_mail_form_adhesion_2 = "Votre numéro identifiant est désormais le mail principal de la famille.";
+            req.session.err_mail_form_adhesion_3 = "Pour tout problème veuillez contacter l’Association.";
             res.redirect('/inscription/adhesion');
         } else {
             console.log("Etat case à coché: ",req.body.check_prof);

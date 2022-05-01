@@ -229,10 +229,18 @@ body {
 /*
 @media (max-width: 9999px)
 */
+header {
+  max-width: 1800px;
+  margin-left: auto;
+  margin-right: auto;
+}
 header .logo {
   margin-top: 30px;
   margin-left: 30px;
   margin-bottom: 70px;
+}
+header .logo img {
+  max-width: 100%;
 }
 header h1 {
   margin-bottom: 20px;
@@ -244,11 +252,12 @@ header p {
   text-align: center;
   font-family: cabin_bold;
   font-size: 24px;
-  color: #939292;
+  color: #1c1c1c;
 }
 
 footer {
   min-height: 300px;
+  margin-top: 100px;
   background-color: #343434;
 }
 
@@ -271,7 +280,7 @@ footer {
   padding-right: 10px;
   background-color: white;
 }
-.input_box input, .input_box input[type=text] {
+.input_box input, .input_box input[type=text], .input_box input[type=tel], .input_box select {
   padding-top: 16px;
   padding-bottom: 13px;
   padding-left: 16px;
@@ -280,14 +289,13 @@ footer {
   border: 2px solid #454343;
   outline: none;
   border-radius: 5px;
-  color: #454343;
 }
-.input_box input:focus-visible, .input_box input:focus, .input_box input:focus-within, .input_box input:hover, .input_box input:focus, .input_box input:active, .input_box input:visited, .input_box input:target, .input_box input[type=text]:focus-visible, .input_box input[type=text]:focus, .input_box input[type=text]:focus-within, .input_box input[type=text]:hover, .input_box input[type=text]:focus, .input_box input[type=text]:active, .input_box input[type=text]:visited, .input_box input[type=text]:target {
+.input_box input:focus-visible, .input_box input:focus, .input_box input:focus-within, .input_box input:hover, .input_box input:focus, .input_box input:active, .input_box input:visited, .input_box input:target, .input_box input[type=text]:focus-visible, .input_box input[type=text]:focus, .input_box input[type=text]:focus-within, .input_box input[type=text]:hover, .input_box input[type=text]:focus, .input_box input[type=text]:active, .input_box input[type=text]:visited, .input_box input[type=text]:target, .input_box input[type=tel]:focus-visible, .input_box input[type=tel]:focus, .input_box input[type=tel]:focus-within, .input_box input[type=tel]:hover, .input_box input[type=tel]:focus, .input_box input[type=tel]:active, .input_box input[type=tel]:visited, .input_box input[type=tel]:target, .input_box select:focus-visible, .input_box select:focus, .input_box select:focus-within, .input_box select:hover, .input_box select:focus, .input_box select:active, .input_box select:visited, .input_box select:target {
   background-color: white !important;
   border: 2px solid #454343;
   outline: none;
 }
-.input_box input:-webkit-autofill, .input_box input:-webkit-autofill:hover, .input_box input:-webkit-autofill:focus, .input_box input:-webkit-autofill:active, .input_box input:-webkit-autofill:focus-visible, .input_box input:-webkit-autofill:focus-within, .input_box input:-webkit-autofill:visited, .input_box input:target, .input_box input[type=text]:-webkit-autofill, .input_box input[type=text]:-webkit-autofill:hover, .input_box input[type=text]:-webkit-autofill:focus, .input_box input[type=text]:-webkit-autofill:active, .input_box input[type=text]:-webkit-autofill:focus-visible, .input_box input[type=text]:-webkit-autofill:focus-within, .input_box input[type=text]:-webkit-autofill:visited, .input_box input[type=text]:target {
+.input_box input:-webkit-autofill, .input_box input:-webkit-autofill:hover, .input_box input:-webkit-autofill:focus, .input_box input:-webkit-autofill:active, .input_box input:-webkit-autofill:focus-visible, .input_box input:-webkit-autofill:focus-within, .input_box input:-webkit-autofill:visited, .input_box input:target, .input_box input[type=text]:-webkit-autofill, .input_box input[type=text]:-webkit-autofill:hover, .input_box input[type=text]:-webkit-autofill:focus, .input_box input[type=text]:-webkit-autofill:active, .input_box input[type=text]:-webkit-autofill:focus-visible, .input_box input[type=text]:-webkit-autofill:focus-within, .input_box input[type=text]:-webkit-autofill:visited, .input_box input[type=text]:target, .input_box input[type=tel]:-webkit-autofill, .input_box input[type=tel]:-webkit-autofill:hover, .input_box input[type=tel]:-webkit-autofill:focus, .input_box input[type=tel]:-webkit-autofill:active, .input_box input[type=tel]:-webkit-autofill:focus-visible, .input_box input[type=tel]:-webkit-autofill:focus-within, .input_box input[type=tel]:-webkit-autofill:visited, .input_box input[type=tel]:target, .input_box select:-webkit-autofill, .input_box select:-webkit-autofill:hover, .input_box select:-webkit-autofill:focus, .input_box select:-webkit-autofill:active, .input_box select:-webkit-autofill:focus-visible, .input_box select:-webkit-autofill:focus-within, .input_box select:-webkit-autofill:visited, .input_box select:target {
   box-shadow: 0 0 0 30px white inset !important;
 }
 .input_box input[type=email] {
@@ -309,19 +317,74 @@ footer {
 .input_box input[type=email]:-webkit-autofill, .input_box input[type=email]:-webkit-autofill:hover, .input_box input[type=email]:-webkit-autofill:focus, .input_box input[type=email]:-webkit-autofill:active, .input_box input[type=email]:-webkit-autofill:focus-visible, .input_box input[type=email]:-webkit-autofill:focus-within, .input_box input[type=email]:-webkit-autofill:visited, .input_box input[type=email]:target {
   box-shadow: 0 0 0 30px white inset !important;
 }
+.input_box input[type=text], .input_box input[type=tel], .input_box input[type=date], .input_box select {
+  padding-top: 14px;
+  padding-bottom: 6px;
+  padding-left: 10px;
+  padding-right: 8px;
+  background-color: white;
+  border: 1.8px solid #707070;
+  outline: none;
+  border-radius: 5px;
+  color: #1c1c1c;
+}
+.input_box input[type=text]:focus-visible, .input_box input[type=text]:focus, .input_box input[type=text]:focus-within, .input_box input[type=text]:hover, .input_box input[type=text]:focus, .input_box input[type=text]:active, .input_box input[type=text]:visited, .input_box input[type=text]:target, .input_box input[type=tel]:focus-visible, .input_box input[type=tel]:focus, .input_box input[type=tel]:focus-within, .input_box input[type=tel]:hover, .input_box input[type=tel]:focus, .input_box input[type=tel]:active, .input_box input[type=tel]:visited, .input_box input[type=tel]:target, .input_box input[type=date]:focus-visible, .input_box input[type=date]:focus, .input_box input[type=date]:focus-within, .input_box input[type=date]:hover, .input_box input[type=date]:focus, .input_box input[type=date]:active, .input_box input[type=date]:visited, .input_box input[type=date]:target, .input_box select:focus-visible, .input_box select:focus, .input_box select:focus-within, .input_box select:hover, .input_box select:focus, .input_box select:active, .input_box select:visited, .input_box select:target {
+  background-color: white !important;
+  border: 2px solid #454343;
+  outline: none;
+}
+.input_box input[type=text]:-webkit-autofill, .input_box input[type=text]:-webkit-autofill:hover, .input_box input[type=text]:-webkit-autofill:focus, .input_box input[type=text]:-webkit-autofill:active, .input_box input[type=text]:-webkit-autofill:focus-visible, .input_box input[type=text]:-webkit-autofill:focus-within, .input_box input[type=text]:-webkit-autofill:visited, .input_box input[type=text]:target, .input_box input[type=tel]:-webkit-autofill, .input_box input[type=tel]:-webkit-autofill:hover, .input_box input[type=tel]:-webkit-autofill:focus, .input_box input[type=tel]:-webkit-autofill:active, .input_box input[type=tel]:-webkit-autofill:focus-visible, .input_box input[type=tel]:-webkit-autofill:focus-within, .input_box input[type=tel]:-webkit-autofill:visited, .input_box input[type=tel]:target, .input_box input[type=date]:-webkit-autofill, .input_box input[type=date]:-webkit-autofill:hover, .input_box input[type=date]:-webkit-autofill:focus, .input_box input[type=date]:-webkit-autofill:active, .input_box input[type=date]:-webkit-autofill:focus-visible, .input_box input[type=date]:-webkit-autofill:focus-within, .input_box input[type=date]:-webkit-autofill:visited, .input_box input[type=date]:target, .input_box select:-webkit-autofill, .input_box select:-webkit-autofill:hover, .input_box select:-webkit-autofill:focus, .input_box select:-webkit-autofill:active, .input_box select:-webkit-autofill:focus-visible, .input_box select:-webkit-autofill:focus-within, .input_box select:-webkit-autofill:visited, .input_box select:target {
+  box-shadow: 0 0 0 30px white inset !important;
+}
+.input_box input[type=text]:-webkit-autofill, .input_box input[type=text]:-webkit-autofill:hover, .input_box input[type=text]:-webkit-autofill:focus, .input_box input[type=text]:-webkit-autofill:active, .input_box input[type=text]:-webkit-autofill:focus-visible, .input_box input[type=text]:-webkit-autofill:focus-within, .input_box input[type=text]:-webkit-autofill:visited, .input_box input[type=text]:target, .input_box input[type=tel]:-webkit-autofill, .input_box input[type=tel]:-webkit-autofill:hover, .input_box input[type=tel]:-webkit-autofill:focus, .input_box input[type=tel]:-webkit-autofill:active, .input_box input[type=tel]:-webkit-autofill:focus-visible, .input_box input[type=tel]:-webkit-autofill:focus-within, .input_box input[type=tel]:-webkit-autofill:visited, .input_box input[type=tel]:target, .input_box input[type=date]:-webkit-autofill, .input_box input[type=date]:-webkit-autofill:hover, .input_box input[type=date]:-webkit-autofill:focus, .input_box input[type=date]:-webkit-autofill:active, .input_box input[type=date]:-webkit-autofill:focus-visible, .input_box input[type=date]:-webkit-autofill:focus-within, .input_box input[type=date]:-webkit-autofill:visited, .input_box input[type=date]:target, .input_box select:-webkit-autofill, .input_box select:-webkit-autofill:hover, .input_box select:-webkit-autofill:focus, .input_box select:-webkit-autofill:active, .input_box select:-webkit-autofill:focus-visible, .input_box select:-webkit-autofill:focus-within, .input_box select:-webkit-autofill:visited, .input_box select:target {
+  -webkit-text-fill-color: #1c1c1c;
+}
 
 /* FORMAT DU CONTENUE DU CHAMP DE SAISIE */
 /* ***************************************** */
 .input_email label {
   font-size: 18px;
-  color: #939292;
+  color: #1c1c1c;
 }
 .input_email input[type=email] {
-  min-width: 330px;
   max-width: 500px;
   font-size: 18px;
 }
+@media (max-width: 330px) {
+  .input_email input[type=email] {
+    min-width: 240px;
+  }
+}
+@media (min-width: 330px) {
+  .input_email input[type=email] {
+    min-width: 330px;
+  }
+}
 .input_email input[type=email]::placeholder {
+  font-family: cabin_italic;
+  font-size: 12px;
+  color: #A2A0A0;
+}
+
+.input_text label {
+  font-size: 16px;
+  color: #707070;
+}
+.input_text input[type=text], .input_text input[type=tel], .input_text input[type=date], .input_text select {
+  max-width: 500px;
+  font-size: 16px;
+}
+@media (max-width: 330px) {
+  .input_text input[type=text], .input_text input[type=tel], .input_text input[type=date], .input_text select {
+    min-width: 240px;
+  }
+}
+@media (min-width: 330px) {
+  .input_text input[type=text], .input_text input[type=tel], .input_text input[type=date], .input_text select {
+    min-width: 330px;
+  }
+}
+.input_text input[type=text]::placeholder, .input_text input[type=tel]::placeholder, .input_text input[type=date]::placeholder, .input_text select::placeholder {
   font-family: cabin_italic;
   font-size: 12px;
   color: #A2A0A0;
@@ -334,7 +397,7 @@ footer {
 /* ***************************************** */
 .input_checkbox label {
   margin-left: 5px;
-  font-size: 14px;
+  font-size: 15px;
   color: #707070;
 }
 .input_checkbox input[type=checkbox] {
@@ -370,17 +433,24 @@ button {
 }
 button .btn_icone {
   font-family: montserrat_regular;
-  font-size: 40px;
+  font-size: 36px;
 }
 button .btn_texte {
   display: inline-block;
-  transform: translateY(-8px);
+  transform: translateY(-7px);
   padding-left: 10px;
-  font-size: 20px;
+  font-size: 17px;
+}
+
+.erreur {
+  margin-bottom: 70px;
+  text-align: center;
+}
+.erreur p {
+  color: #E73058;
 }
 
 .form_check_mail {
-  margin-top: 85px;
   display: grid;
   grid-template-columns: 2fr 1fr 2fr;
   grid-template-rows: auto auto auto;
@@ -400,6 +470,12 @@ button .btn_texte {
   justify-self: center;
 }
 
+main {
+  max-width: 1800px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 85px;
+}
 @media (min-width: 1100px) {
   main {
     min-height: 400px;
@@ -410,15 +486,49 @@ button .btn_texte {
     min-height: 340px;
   }
 }
-@media (max-width: 400px) {
+@media (max-width: 330px) {
   main {
     min-height: 230px;
   }
 }
 
-p {
-  color: green;
-  font-size: 18px;
+.form_adhesion {
+  display: grid;
+  justify-content: center;
+}
+@media (min-width: 330px) {
+  .form_adhesion {
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+}
+@media (max-width: 330px) {
+  .form_adhesion {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+}
+.form_adhesion .input_checkbox {
+  margin-bottom: 37px;
+}
+
+.grid_3inputs {
+  display: grid;
+  grid-template-columns: minmax(auto, 350px) minmax(auto, 350px) minmax(auto, 350px);
+  grid-template-rows: auto;
+  column-gap: 20px;
+  row-gap: 30px;
+  margin-bottom: 50px;
+  margin-top: 50px;
+}
+
+.grid_2inputs {
+  display: grid;
+  grid-template-columns: minmax(auto, 350px) minmax(auto, 350px);
+  grid-template-rows: auto;
+  column-gap: 20px;
+  row-gap: 30px;
+  margin-bottom: 50px;
 }
 
 .hidden {

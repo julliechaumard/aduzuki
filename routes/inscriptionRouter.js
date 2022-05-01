@@ -18,20 +18,16 @@ const {
 // GET est la "req" (la requête)
 router.get('/adhesion', function(req, res) {
 
-    if (req.session.err_mail_form_adhesion) {
-        res.locals.err_mail_form_adhesion = req.session.err_mail_form_adhesion;
+    if (req.session.err_mail_form_adhesion_1) {
+        res.locals.err_mail_form_adhesion_1 = req.session.err_mail_form_adhesion_1;
+        res.locals.err_mail_form_adhesion_2 = req.session.err_mail_form_adhesion_2;
+        res.locals.err_mail_form_adhesion_3 = req.session.err_mail_form_adhesion_3;
         // on peut supprimer le contenu après affichage
         req.session.err_mail_form_adhesion = undefined;
     }
-    if (req.session.complete_mail_form_adhesion) {
-        res.locals.complete_mail_form_adhesion = req.session.complete_mail_form_adhesion;
-        // on peut supprimer le contenu après affichage
-        req.session.complete_mail_form_adhesion = undefined;
-    }
+
     if (req.session.identifiant) {
         res.locals.identifiant = req.session.identifiant;
-        // on peut supprimer le contenu après affichage
-    //    req.session.identifiant = undefined;
     }
 
     res.render('page_templates/formulaire_adhesion_mail');

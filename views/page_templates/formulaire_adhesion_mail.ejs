@@ -13,13 +13,15 @@
 
   <main>
 
-    <!-- AFFICHAGE DES MESSAGES ERREURS RETOUR DE OPST FORMULAIRE -->
-    <% if (locals.err_mail_form_adhesion) { %>
-      <div><p><%= err_mail_form_adhesion %></p></div>
+    <!-- AFFICHAGE DES MESSAGES ERREURS RETOUR DE POST FORMULAIRE -->
+    <% if (locals.err_mail_form_adhesion_1) { %>
+      <div class="erreur">
+        <p><%= err_mail_form_adhesion_1 %></p>
+        <p><%= err_mail_form_adhesion_2 %></p>
+        <p><%= err_mail_form_adhesion_3 %></p>
+      </div>
     <% }; %>
-    <% if (locals.complete_mail_form_adhesion) { %>
-      <div><p><%= complete_mail_form_adhesion %></p></div>
-    <% }; %>
+
       
     <!-- lE formuaire -->
     <%- include('../template_parts/adhesion/check_mail')%>

@@ -3,78 +3,77 @@
 <body>
     <%- include('../template_parts/header')%>
     
-
-   
-    <p>C'est le body</p>
-
-<form action="" method="post">
-   
-
-    <!-- ---------------------------------- -->
-    <!-- PROF                               -->
-    <!-- FORMULAIRE de saisie Infos générales -->
-    <!-- ---------------------------------- -->
-
-    <%- include('../template_parts/adhesion/prof_infosgenerale')%>
+<main>
 
 
-    <!-- ---------------------------------- -->
-    <!-- PROF                               -->
-    <!-- FORMULAIRE de saisie DIPLOMES -->
-    <!-- ---------------------------------- -->
+    <form action="" method="post" class="form_adhesion">
 
-    <!-- ---------------------------------- -->
-    <!-- PROF                               -->
-    <!-- VEUT-IL SAISIR DIPLOME ? -->
-    <!-- ---------------------------------- -->
-    <div class="">
-        <input type="checkbox" name="check_prof_diplome" id="check_prof_diplome" onclick="prof_diplome()">
-        <label for="check_prof_diplome">Vous êtes diplômé de la pédagogie Suzuki</label>
-    </div>
+        <!-- ---------------------------------- -->
+        <!-- PROF                               -->
+        <!-- FORMULAIRE de saisie Infos générales -->
+        <!-- ---------------------------------- -->
 
-    <%- include('../template_parts/adhesion/prof_diplome')%>
+        <%- include('../template_parts/adhesion/prof_infosgenerale')%>
 
 
-    <!-- ---------------------------------- -->
-    <!-- PROF                               -->
-    <!-- FORMULAIRE de saisie de l'instrument dont il veut apprendre la pédagogie Suzuki -->
-    <!-- ---------------------------------- -->
+        <!-- ---------------------------------- -->
+        <!-- PROF                               -->
+        <!-- FORMULAIRE de saisie DIPLOMES -->
+        <!-- ---------------------------------- -->
 
-    <!-- ---------------------------------- -->
-    <!-- PROF                               -->
-    <!-- VEUT-IL ENTRER EN FORMATION ? -->
-    <!-- ---------------------------------- -->
+        <!-- ---------------------------------- -->
+        <!-- PROF                               -->
+        <!-- VEUT-IL SAISIR DIPLOME ? -->
+        <!-- ---------------------------------- -->
+        <div class="input_checkbox">
+            <input type="checkbox" name="check_prof_diplome" id="check_prof_diplome" onclick="prof_diplome()">
+            <label for="check_prof_diplome">Vous êtes diplômé de la pédagogie Suzuki</label>
+        </div>
 
-    <div class="">
-        <input type="checkbox" name="check_prof_formation" id="check_prof_formation" onclick="prof_formation()">
-        <label for="check_prof_formation">Vous souhaitez obtenir un diplôme de la pédagogie Suzuki et entrer en formation</label>
-    </div>
-
-    <%- include('../template_parts/adhesion/prof_formation')%>
-
-
-    <!-- ---------------------------------- -->
-    <!-- PROF                               -->
-    <!-- Ajouter des élèves ? -->
-    <!-- ---------------------------------- -->
-
-    <div class="">
-        <input type="checkbox" name="check_prof_eleve" id="check_prof_eleve" onclick="prof_eleve()">
-        <label for="check_prof_eleve">Vous souhaitez inscrire à l’adhésion annuelle vos enfants qui suivent des cours Suzuki</label>
-    </div>
-    <div><p>Compris dans la prix de l’adhésion professeur.</p></div>
+        <%- include('../template_parts/adhesion/prof_diplome')%>
 
 
-    <%- include('../template_parts/adhesion/eleves')%>
+        <!-- ---------------------------------- -->
+        <!-- PROF                               -->
+        <!-- FORMULAIRE de saisie de l'instrument dont il veut apprendre la pédagogie Suzuki -->
+        <!-- ---------------------------------- -->
 
-    <!-- ---------------------------------- -->
-    <!-- BOUTON ENREGISTRER -->
-    <!-- ---------------------------------- -->
-    <div class="">
-        <input type="submit" value="Enregistrer">
-    </div>
+        <!-- ---------------------------------- -->
+        <!-- PROF                               -->
+        <!-- VEUT-IL ENTRER EN FORMATION ? -->
+        <!-- ---------------------------------- -->
 
-</form>
+        <div class="input_checkbox">
+            <input type="checkbox" name="check_prof_formation" id="check_prof_formation" onclick="prof_formation()">
+            <label for="check_prof_formation">Vous souhaitez obtenir un diplôme de la pédagogie Suzuki et entrer en formation</label>
+        </div>
+
+        <%- include('../template_parts/adhesion/prof_formation')%>
+
+
+        <!-- ---------------------------------- -->
+        <!-- PROF                               -->
+        <!-- Ajouter des élèves ? -->
+        <!-- ---------------------------------- -->
+
+        <div class="input_checkbox">
+            <input type="checkbox" name="check_prof_eleve" id="check_prof_eleve" onclick="prof_eleve()">
+            <label for="check_prof_eleve">Vous souhaitez inscrire à l’adhésion annuelle vos enfants qui suivent des cours Suzuki (compris dans la prix de l’adhésion professeur)</label>
+        </div>
+
+
+        <%- include('../template_parts/adhesion/eleves')%>
+
+        <!-- ---------------------------------- -->
+        <!-- BOUTON ENREGISTRER -->
+        <!-- ---------------------------------- -->
+        <div class="">
+            <input type="submit" value="Enregistrer">
+        </div>
+
+    </form>
+
+</main>
 
 </body>
 
