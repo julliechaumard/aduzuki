@@ -1,0 +1,125 @@
+.adhesion_fin_container {
+
+    display: grid;
+    grid-column-gap: 20px;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-areas: ". adhesion_fin .";
+
+    .adhesion_fin {
+        grid-area: adhesion_fin;
+
+        display: grid;
+        grid-template-rows: auto auto auto;
+        row-gap: 30px;
+        grid-template-areas: 
+        "adhesion_fin_adresse"
+        "adhesion_fin_description"
+        "adhesion_fin_card";
+
+
+        .adhesion_fin_adresse {
+            grid-area: adhesion_fin_adresse;
+            justify-self: end;
+            .adhesion_fin_adresse_titre {
+                font-family: montserrat_semibold;
+            }
+            .adhesion_fin_adresse_infos {
+                margin-top: 10px;
+                font-family: montserrat_regular;
+            }
+            .adhesion_fin_adresse_identifiant {
+                margin-top: 15px;
+                font-family: montserrat_thin;
+                                .adhesion_fin_adresse_identifiant_bold {
+                    font-family: montserrat_regular;
+                }
+            }
+
+            .adhesion_fin_date {
+                margin-top: 15px;
+                font-family: montserrat_thin;
+            }
+        }
+
+        .adhesion_fin_description {
+            grid-area: adhesion_fin_description;
+            margin-top: 60px;
+            text-align: center;
+            .adhesion_fin_description_identifiant{
+                margin-top: 20px;
+                font-family: montserrat_thin;
+                font-size: 13px;
+            }
+        }
+
+        .adhesion_fin_card {
+            grid-area: adhesion_fin_card;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 2fr;
+            grid-template-rows: auto auto auto auto;
+            row-gap: 30px;
+            grid-template-areas: 
+            "logo logo . adhesion_fin_card_description"
+            ". adhesion_fin_card_identifiant adhesion_fin_card_identifiant adhesion_fin_card_identifiant"
+            ". adhesion_fin_card_profil adhesion_fin_card_profil adhesion_fin_card_profil"
+            ". adhesion_fin_paiement adhesion_fin_paiement adhesion_fin_paiement";
+
+            margin: 10%;
+            padding: 20px;
+            background-color: $color_rouge_tres_clair;
+            border: 4px dashed $color_rouge;
+
+            .logo {
+                grid-area: logo;
+                img {
+                    width: 100%;
+                }
+            }     
+            .adhesion_fin_card_description {
+                grid-area: adhesion_fin_card_description;
+                justify-self: end;
+                text-align: center;
+                .adhesion_fin_card_description_assoc {
+                    margin-top: 5px;
+                    font-family: montserrat_regular;
+                    font-size: 14px;
+                }
+                .adhesion_fin_card_description_annee {
+                    margin-top: 5px;
+                    font-family: montserrat_light;
+                    font-size: 12px;
+                }
+            }
+            .adhesion_fin_card_identifiant {
+                grid-area: adhesion_fin_card_identifiant;
+                margin-top: 14px;
+                font-family: montserrat_thin;
+                .adhesion_fin_card_identifiant_mail {
+                    padding-left: 10px;
+                    font-family: montserrat_regular;
+                    color: $color_rouge;
+                }
+            }
+            .adhesion_fin_card_profil {
+                grid-area: adhesion_fin_card_profil;
+                font-family: montserrat_regular;
+                ul {
+                    li {
+                        &:before {
+                            content: '- ';
+                         }
+                    }
+                }
+            }    
+            .adhesion_fin_paiement {
+                grid-area: adhesion_fin_paiement;
+                font-family: montserrat_thin;
+                font-size: 13px;
+            }   
+        }
+
+    }
+
+
+
+}

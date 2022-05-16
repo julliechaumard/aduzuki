@@ -10,7 +10,7 @@
     <!-- ---------------------------------- -->
     <section id="prof_diplome" class="hidden">
         <div class="grid_2inputs">
-            <div class="input_box input_text">
+            <div class="input_box input_text input_box_bleu">
                 <label for="adherent_prof_instrument1">Instrument</label>
                 <select id="adherent_prof_instrument1" name="adherent_prof_instrument1">
                     <option value="" selected></option>
@@ -26,7 +26,7 @@
                 </select>
             </div>
 
-            <div class="input_box input_text">
+            <div class="input_box input_text input_box_bleu">
                 <label for="adherent_prof_instrument1_esa">Niveau ESA Obtenu</label>
                 <select id="adherent_prof_instrument1_esa" name="adherent_prof_instrument1_esa">
                     <option value="" selected></option>
@@ -40,7 +40,7 @@
                 </select>
             </div>
 
-            <div class="input_box input_text">
+            <div class="input_box input_text input_box_bleu">
                 <label for="adherent_prof_instrument2">Deuxième instrument</label>
                 <select id="adherent_prof_instrument2" name="adherent_prof_instrument2">
                     <option value="" selected></option>
@@ -56,7 +56,7 @@
                 </select>
             </div>
 
-            <div class="input_box input_text">
+            <div class="input_box input_text input_box_bleu">
                 <label for="adherent_prof_instrument2_esa">Niveau ESA Obtenu</label>
                 <select id="adherent_prof_instrument2_esa" name="adherent_prof_instrument2_esa">
                     <option value="" selected></option>
@@ -70,7 +70,7 @@
                 </select>
             </div>
 
-            <div class="input_box input_text">
+            <div class="input_box input_text input_box_bleu">
                 <label for="adherent_prof_sece">Diplômé SECE (Early Childhood)</label>
                 <select id="adherent_prof_sece" name="adherent_prof_sece">
                     <option value="" selected></option>
@@ -80,63 +80,98 @@
             </div>
         </div>
         
-        <div class="grid_2inputs">
-            <div class="input_box input_text">
-                <label for="adherent_prof_ecole1">École de musique / classe Suzuki</label>
+
+        <div class="explication">
+            <p>Renseigner jusqu'à 3 écoles de musique ou classes dans lesquelles vous enseignez selon la pédagogie Suzuki</p>
+        </div>
+
+        <div class="grid_3inputs">
+            <div class="input_box input_text input_box_bleu">
+                <label for="adherent_prof_ecole1">École / classe [1]</label>
                 <input type="text" name="adherent_prof_ecole1" id="adherent_prof_ecole1" placeholder="Dans laquelle vous enseignez">
             </div>
 
-            <div class="input_box input_text">
+            <div class="input_box input_text input_box_gris">
+                <label for="adherent_prof_ecole1_mail">Mail</label>
+                <input type="text" name="adherent_prof_ecole1_mail" id="adherent_prof_ecole1_mail">
+            </div>
+
+            <div class="input_box input_text input_box_gris">
+                <label for="adherent_prof_ecole1_web">Site internet</label>
+                <input type="text" name="adherent_prof_ecole1_web" id="adherent_prof_ecole1_web">
+            </div>
+
+            <div class="input_box input_text input_box_gris">
                 <label for="adherent_prof_ecole1_adresse">Adresse</label>
                 <input type="text" name="adherent_prof_ecole1_adresse" id="adherent_prof_ecole1_adresse">
             </div>
 
-            <div class="input_box input_text">
+            <div class="input_box input_text input_box_gris">
                 <label for="adherent_prof_ecole1_cp">Code postal</label>
                 <input type="text" name="adherent_prof_ecole1_cp" id="adherent_prof_ecole1_cp">
             </div>
 
-            <div class="input_box input_text">
+            <div class="input_box input_text input_box_gris">
                 <label for="adherent_prof_ecole1_ville">Ville</label>
                 <input type="text" name="adherent_prof_ecole1_ville" id="adherent_prof_ecole1_ville">
             </div>
 
-            <div class="input_box input_text">
-                <label for="adherent_prof_ecole2">École de musique / classe Suzuki</label>
+            <div class="input_box input_text input_box_bleu">
+                <label for="adherent_prof_ecole2">École / classe [2]</label>
                 <input type="text" name="adherent_prof_ecole2" id="adherent_prof_ecole2" placeholder="Dans laquelle vous enseignez">
             </div>
 
-            <div class="input_box input_text">
+            <div class="input_box input_text input_box_gris">
+                <label for="adherent_prof_ecole2_mail">Mail</label>
+                <input type="text" name="adherent_prof_ecole2_mail" id="adherent_prof_ecole2_mail">
+            </div>
+
+            <div class="input_box input_text input_box_gris">
+                <label for="adherent_prof_ecole2_web">Site internet</label>
+                <input type="text" name="adherent_prof_ecole2_web" id="adherent_prof_ecole2_web">
+            </div>
+
+            <div class="input_box input_text input_box_gris">
                 <label for="adherent_prof_ecole2_adresse">Adresse</label>
                 <input type="text" name="adherent_prof_ecole2_adresse" id="adherent_prof_ecole2_adresse">
             </div>
 
-            <div class="input_box input_text">
+            <div class="input_box input_text input_box_gris">
                 <label for="adherent_prof_ecole2_cp">Code postal</label>
                 <input type="text" name="adherent_prof_ecole2_cp" id="adherent_prof_ecole2_cp">
             </div>
 
-            <div class="input_box input_text">
+            <div class="input_box input_text input_box_gris">
                 <label for="adherent_prof_ecole2_ville">Ville</label>
                 <input type="text" name="adherent_prof_ecole2_ville" id="adherent_prof_ecole2_ville">
             </div>
 
-            <div class="input_box input_text">
-                <label for="adherent_prof_ecole3">École de musique / classe Suzuki</label>
+            <div class="input_box input_text input_box_bleu">
+                <label for="adherent_prof_ecole3">École / classe [3]</label>
                 <input type="text" name="adherent_prof_ecole3" id="adherent_prof_ecole3" placeholder="Dans laquelle vous enseignez">
             </div>
 
-            <div class="input_box input_text">
+            <div class="input_box input_text input_box_gris">
+                <label for="adherent_prof_ecole3_mail">Mail</label>
+                <input type="text" name="adherent_prof_ecole3_mail" id="adherent_prof_ecole3_mail">
+            </div>
+
+            <div class="input_box input_text input_box_gris">
+                <label for="adherent_prof_ecole3_web">Site internet</label>
+                <input type="text" name="adherent_prof_ecole3_web" id="adherent_prof_ecole3_web">
+            </div>
+
+            <div class="input_box input_text input_box_gris">
                 <label for="adherent_prof_ecole3_adresse">Adresse</label>
                 <input type="text" name="adherent_prof_ecole3_adresse" id="adherent_prof_ecole3_adresse">
             </div>
 
-            <div class="input_box input_text">
+            <div class="input_box input_text input_box_gris">
                 <label for="adherent_prof_ecole3_cp">Code postal</label>
                 <input type="text" name="adherent_prof_ecole3_cp" id="adherent_prof_ecole3_cp">
             </div>
 
-            <div class="input_box input_text">
+            <div class="input_box input_text input_box_gris">
                 <label for="adherent_prof_ecole3_ville">Ville</label>
                 <input type="text" name="adherent_prof_ecole3_ville" id="adherent_prof_ecole3_ville">
             </div>

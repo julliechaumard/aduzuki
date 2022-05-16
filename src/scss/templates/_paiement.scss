@@ -1,0 +1,148 @@
+
+.paiement_container {
+
+    display: grid;
+    grid-column-gap: 20px;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-areas: ". paiement .";
+
+    .paiement {
+        grid-area: paiement;
+        border: 2px solid $color_rouge;
+        display: grid;
+        grid-column-gap: 20px;
+        grid-row-gap: 15px;
+        grid-template-columns: 1fr 3fr 4fr;
+        grid-template-rows: auto auto auto auto auto auto auto auto auto;
+        grid-template-areas: 
+        "paiement_titre paiement_titre paiement_titre"
+        ". montant_cotisation_label montant_cotisation_euros_box"
+        ". montant_don_label montant_don_euros_box"
+        ". . don"
+        ". montant_total_label montant_total_euros_box"
+        ". paiement_mode ."
+        ". paiement_mode_choix paiement_mode_choix_nocb"
+        ".paiement_cb paiement_nocb"
+        ". . paiement_nocb_form";
+        
+        .paiement_titre {
+            grid-area: paiement_titre;
+            margin-bottom: 30px;
+            padding-bottom: 5px;
+            padding-top: 5px;
+            background-color: $color_rouge;
+            color: $color_blanc;
+            text-align: center;
+        }
+        .montant_cotisation_label {
+            grid-area: montant_cotisation_label;
+            align-self: center;
+            color: $color_gris_clair;
+        }
+        .montant_cotisation_euros_box {
+            grid-area: montant_cotisation_euros_box;
+        }
+        .don {
+            grid-area: don;
+            margin-top: 22px;
+        }
+        .montant_don_label {
+            grid-area: montant_don_label;
+            align-self: center;
+            color: $color_gris_clair;
+        }
+        .montant_don_euros_box {
+            grid-area: montant_don_euros_box;
+        }
+        .montant_total_label {
+            grid-area: montant_total_label;
+            align-self: center;
+        }
+        .montant_total_euros_box {
+            grid-area: montant_total_euros_box;
+        }
+        .paiement_mode {
+            grid-area: paiement_mode;
+            margin-top: 40px;
+        }
+        .paiement_mode_choix {
+            grid-area: paiement_mode_choix;
+        }
+        .paiement_mode_choix_nocb {
+            grid-area: paiement_mode_choix_nocb;
+        }
+        #paiement_cb {
+            grid-area: paiement_cb;
+        }
+        #paiement_nocb {
+            grid-area: paiement_nocb;
+        }
+        .paiement_nocb_choix {
+            display: flex;
+        }
+        .paiement_nocb_choix_cheque {
+            margin-left: 20px;
+        }
+    
+        .open_modal_don {
+            display: grid;
+            justify-content: center;
+            margin-top: 6px;
+            margin-bottom: 45px;
+            text-decoration: underline;
+            font-size: 12px;
+            p {
+                &:hover {
+                    cursor: pointer;
+                }
+            }
+        }
+    
+        .montant_cotisation_euros {
+            display: inline-block;
+            padding-top: 8px;
+            padding-bottom: 6px;
+            padding-left: 10px;
+            padding-right: 8px;
+        }
+    
+        .montant_total_label {
+            color: $color_rouge;
+        }
+        .montant_total_euros {
+            display: inline-block;
+            padding-top: 8px;
+            padding-bottom: 6px;
+            padding-left: 10px;
+            padding-right: 8px;
+            color: $color_rouge;
+        }
+    
+        .paiement_nocb_form {
+            grid-area: paiement_nocb_form;
+            margin-bottom: 25px;
+            font-size: 13px;
+            .paiement_description {
+                margin-bottom: 3px;
+                font-family: montserrat_light;
+            }
+        }
+        .paiement_nocb_infos {
+            display: grid;
+            grid-template-rows: auto auto auto auto;
+            grid-row-gap: 25px;
+            .nom_banque {
+                margin-top: 15px;
+            }
+        }
+        .euro_label {
+            padding-left: 8px;
+            color: $color_gris_clair;
+        }
+        
+    
+    
+    }
+
+}
+

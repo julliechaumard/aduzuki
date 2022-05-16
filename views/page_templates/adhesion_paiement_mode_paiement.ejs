@@ -1,0 +1,124 @@
+<%- include('../template_parts/head')%>
+
+<body>
+    <%- include('../template_parts/header')%>
+    
+
+<main>
+
+    <section class="paiement_container">
+        <div class="paiement">
+
+            <div class="paiement_titre">
+                <p>PAIEMENT</p>
+            </div>
+
+            <div class="montant_cotisation_label">
+                <p>Montant de votre cotisation annuelle</p>
+            </div>
+            <div class="montant_cotisation_euros_box">
+                <div class="montant_cotisation_euros"><%= adherent_paiement_montant_adhesion %> <span class="euro_label"> euros</span></div>
+            </div>
+            
+            <div class="montant_don_label">
+                <p>Montant de votre don</p>
+            </div>
+            <div class="montant_don_euros_box">
+                <div class="montant_cotisation_euros"><%= adherent_paiement_montant_don %> <span class="euro_label"> euros</span></div>
+            </div>
+
+
+
+
+    
+    
+
+            <div id="montant_total_label" class="montant_total_label">
+                <p>Montant total</p>
+            </div>
+
+            <div id="montant_total_euros_box" class="montant_total_euros_box">
+                <div class="montant_total_euros"><%= montant_apayer %> <span class="euro_label"> euros</span></div>
+            </div>
+
+            <div id="paiement_mode" class="paiement_mode">
+                <p>Mode de paiement</p>
+            </div>
+            
+
+            <div id="paiement_mode_choix" class="paiement_mode_choix">
+                <div class="input_checkbox">
+                    <input type="checkbox" name="check_cb" id="check_cb" onclick="">
+                    <label for="check_cb">carte bancaire</label>
+                </div>
+            </div>
+            <div id="paiement_mode_choix_nocb" class="input_checkbox paiement_mode_choix_nocb">
+                <input type="checkbox" name="check_nocb" id="check_nocb" onclick="">
+                <label for="check_nocb">Je n'ai pas de carte bancaire</label>
+            </div>
+
+            <div id="paiement_cb" class="hidden">
+                <form action="goto_bank" method="post">
+                    <button type="submit" class="button_text">
+                        <span class="btn_texte">PAYER</span>
+                    </button>
+                </form>
+            </div>
+
+            <div id="paiement_nocb" class="hidden">
+                <div class="paiement_nocb_choix">
+                    <div class="input_checkbox">
+                        <input type="checkbox" name="check_virement" id="check_virement" onclick="">
+                        <label for="check_virement">Virement</label>
+                    </div>
+                    <div class="input_checkbox paiement_nocb_choix_cheque">
+                        <input type="checkbox" name="check_cheque" id="check_cheque" onclick="">
+                        <label for="check_cheque">Chèque</label>
+                    </div>
+                </div>
+            </div>
+
+            <div id="paiement_virement" class="hidden paiement_nocb_form">
+                <form action="paiement_virement_save" method="post" class="paiement_nocb_infos">
+                    <div>
+                        <p class="paiement_description">Noter le numéro SEPA sur lequel envoyer votre virement</p>
+                        <p>0000 0000 0000 0000 0000 0000</p>
+                    </div>
+                    <button type="submit" class="button_text">
+                        <span class="btn_texte">VALIDER</span>
+                    </button>
+                </form>
+            </div>
+
+            <div id="paiement_cheque" class="hidden paiement_nocb_form">
+                <form action="paiement_cheque_save" method="post" class="paiement_nocb_infos">
+                    <div class="input_box input_text input_box_gris nom_banque">
+                        <label for="adherent_paiement_cheque_banque">Nom de la banque</label>
+                        <input type="text" name="adherent_paiement_cheque_banque" id="adherent_paiement_cheque_banque">
+                    </div>
+                    <div class="input_box input_text input_box_gris">
+                        <label for="adherent_paiement_cheque_numero">Numéro du chèque</label>
+                        <input type="text" name="adherent_paiement_cheque_numero" id="adherent_paiement_cheque_numero">
+                    </div>
+                    <div>
+                        <p class="paiement_description">Veuillez envoyer votre chèque, sous enveloppe, par courrier, à l’adresse :</p>
+                        <p>Association Française Pédagogie Suzuki<br>Chez Anne PAGES<br>30 rue des Tattes<br>74500 PUBLIER</p>
+                    </div>
+                    <button type="submit" class="button_text">
+                        <span class="btn_texte">VALIDER</span>
+                    </button>
+                </form>
+            </div>
+
+        </div>
+    </section>
+
+</main>
+
+</body>
+
+ 
+ <script src="/public/js/form_paiement.js"></script>
+
+
+<%- include('../template_parts/footer')%>

@@ -12,48 +12,24 @@
       <div>
 
         <div class="grid_3inputs">
-          <div class="input_box input_text">
-            <label for="adherent_eleve1_type">Élève</label>
-            <select id="adherent_eleve1_type" name="adherent_eleve1_type">
-                <option value="" selected></option>
-                <option value="Enfant">Enfant</option>
-                <option value="Adulte">Adulte</option>
-            </select>
-          </div>
-
-          <div class="input_box input_text">
+          <div class="input_box input_text input_box_gris">
             <label for="adherent_eleve1_nom">Nom de famille</label>
             <input type="text" name="adherent_eleve1_nom" id="adherent_eleve1_nom">
           </div>
 
-          <div class="input_box input_text">
+          <div class="input_box input_text input_box_gris">
             <label for="adherent_eleve1_prenom">Prénom</label>
             <input type="text" name="adherent_eleve1_prenom" id="adherent_eleve1_prenom">
           </div>
 
-          <div class="input_box input_text">
+          <div class="input_box input_text input_box_gris">
             <label for="adherent_eleve1_datenaissance">Date de naissance</label>
-            <input type="text" name="adherent_eleve1_datenaissance" id="adherent_eleve1_datenaissance">
+            <input type="date" name="adherent_eleve1_datenaissance" id="adherent_eleve1_datenaissance">
           </div>
         </div>
 
         <div class="grid_3inputs">
-          <div class="input_box input_text">
-            <label for="adherent_eleve1_contactsup_nom">Contact supplémentaite, Nom :</label>
-            <input type="text" name="adherent_eleve1_contactsup_nom" id="adherent_eleve1_contactsup_nom">
-          </div>
-
-          <div class="input_box input_text">
-            <label for="adherent_eleve1_contactsup_prenom">Prénom</label>
-            <input type="text" name="adherent_eleve1_contactsup_prenom" id="adherent_eleve1_contactsup_prenom">
-          </div>
-
-          <div class="input_box input_text">
-            <label for="adherent_eleve1_contactsup_mail">Mail</label>
-            <input type="text" name="adherent_eleve1_contactsup_mail" id="adherent_eleve1_contactsup_mail">
-          </div>
-
-          <div class="input_box input_text">
+          <div class="input_box input_text input_box_bleu">
             <label for="adherent_eleve1_InstrumentA">Pour l'instrument</label>
             <select id="adherent_eleve1_InstrumentA" name="adherent_eleve1_InstrumentA">
             <option value="" selected></option>
@@ -69,7 +45,7 @@
             </select>
           </div>
 
-          <div class="input_box input_text">
+          <div class="input_box input_text input_box_bleu">
             <label for="adherent_eleve1_InstrumentA_cahier">Cahier</label>
             <select id="adherent_eleve1_InstrumentA_cahier" name="adherent_eleve1_InstrumentA_cahier">
               <option value="" selected></option>
@@ -84,29 +60,30 @@
               <option value="Cahier 8">Cahier 8</option>
               <option value="Cahier 9">Cahier 9</option>
               <option value="Cahier 10">Cahier 10</option>
+              <option value="Hors cahier">Hors cahier</option>
             </select>
           </div>
 
-          <div class="input_box input_text">
+          <div class="input_box input_text input_box_bleu">
             <label for="adherent_eleve1_InstrumentA_prof">Professeur</label>
             <select id="adherent_eleve1_InstrumentA_prof" name="adherent_eleve1_InstrumentA_prof">
               <option value="" selected></option>
               <option value="BASMADJIAN Muriel">BASMADJIAN Muriel</option>
               <option value="DENIS Raphaëlle">DENIS Raphaëlle</option>
-              <option value="magrinialessandra">MAGRINI Alessandra</option>
-              <option value="riveraeva">RIVERA Eva</option>
-              <option value="basmadjianmuriel">BASMADJIAN Muriel</option>
-              <option value="denisraphaelle">DENIS Raphaëlle</option>
-              <option value="magrinialessandra">MAGRINI Alessandra</option>
-              <option value="riveraeva">RIVERA Eva</option>
-              <option value="basmadjianmuriel">BASMADJIAN Muriel</option>
-              <option value="denisraphaelle">DENIS Raphaëlle</option>
-              <option value="magrinialessandra">MAGRINI Alessandra</option>
-              <option value="riveraeva">RIVERA Eva</option>
+              <option value="MAGRINI Alessandra">MAGRINI Alessandra</option>
+              <option value="RIVERA Eva">RIVERA Eva</option>
+              <option value="BASMADJIAN Muriel">BASMADJIAN Muriel</option>
+              <option value="DENIS Raphaëlle">DENIS Raphaëlle</option>
+              <option value="MAGRINI Alessandra">MAGRINI Alessandra</option>
+              <option value="RIVERA Eva">RIVERA Eva</option>
+              <option value="BASMADJIAN Muriel">BASMADJIAN Muriel</option>
+              <option value="DENIS Raphaëlle">DENIS Raphaëlle</option>
+              <option value="MAGRINI Alessandra">MAGRINI Alessandra</option>
+              <option value="RIVERA Eva">RIVERA Eva</option>
             </select>
           </div>
 
-          <div class="input_box input_text">
+          <div class="input_box input_text input_box_bleu">
             <label for="adherent_eleve1_InstrumentB">Deuxième instrument</label>
             <select id="adherent_eleve1_InstrumentB" name="adherent_eleve1_InstrumentB">
               <option value="" selected></option>
@@ -122,50 +99,69 @@
             </select>
           </div>
 
-          <div class="input_box input_text">
+          <div class="input_box input_text input_box_bleu">
             <label for="adherent_eleve1_InstrumentB_cahier">Cahier</label>
             <select id="adherent_eleve1_InstrumentB_cahier" name="adherent_eleve1_InstrumentB_cahier">
-                <option value="" selected></option>
-                <option value="Pré-Twinkle">Pré-Twinkle (débutant)</option>
-                <option value="Cahier 1">Cahier 1</option>
-                <option value="Cahier 2">Cahier 2</option>
-                <option value="Cahier 3">Cahier 3</option>
-                <option value="Cahier 4">Cahier 4</option>
-                <option value="Cahier 5">Cahier 5</option>
-                <option value="Cahier 6">Cahier 6</option>
-                <option value="Cahier 7">Cahier 7</option>
-                <option value="Cahier 8">Cahier 8</option>
-                <option value="Cahier 9">Cahier 9</option>
-                <option value="Cahier 10">Cahier 10</option>
+              <option value="" selected></option>
+              <option value="Pré-Twinkle">Pré-Twinkle (débutant)</option>
+              <option value="Cahier 1">Cahier 1</option>
+              <option value="Cahier 2">Cahier 2</option>
+              <option value="Cahier 3">Cahier 3</option>
+              <option value="Cahier 4">Cahier 4</option>
+              <option value="Cahier 5">Cahier 5</option>
+              <option value="Cahier 6">Cahier 6</option>
+              <option value="Cahier 7">Cahier 7</option>
+              <option value="Cahier 8">Cahier 8</option>
+              <option value="Cahier 9">Cahier 9</option>
+              <option value="Cahier 10">Cahier 10</option>
+              <option value="Hors cahier">Hors cahier</option>
             </select>
           </div>
 
-          <div class="input_box input_text">
+          <div class="input_box input_text input_box_bleu">
             <label for="adherent_eleve1_InstrumentB_prof">Professeur</label>
             <select id="adherent_eleve1_InstrumentB_prof" name="adherent_eleve1_InstrumentB_prof">
               <option value="" selected></option>
-              <option value="basmadjianmuriel">BASMADJIAN Muriel</option>
-              <option value="denisraphaelle">DENIS Raphaëlle</option>
-              <option value="magrinialessandra">MAGRINI Alessandra</option>
-              <option value="riveraeva">RIVERA Eva</option>
-              <option value="basmadjianmuriel">BASMADJIAN Muriel</option>
-              <option value="denisraphaelle">DENIS Raphaëlle</option>
-              <option value="magrinialessandra">MAGRINI Alessandra</option>
-              <option value="riveraeva">RIVERA Eva</option>
-              <option value="basmadjianmuriel">BASMADJIAN Muriel</option>
-              <option value="denisraphaelle">DENIS Raphaëlle</option>
-              <option value="magrinialessandra">MAGRINI Alessandra</option>
-              <option value="riveraeva">RIVERA Eva</option>
+              <option value="BASMADJIAN Muriel">BASMADJIAN Muriel</option>
+              <option value="DENIS Raphaëlle">DENIS Raphaëlle</option>
+              <option value="MAGRINI Alessandra">MAGRINI Alessandra</option>
+              <option value="RIVERA Eva">RIVERA Eva</option>
+              <option value="BASMADJIAN Muriel">BASMADJIAN Muriel</option>
+              <option value="DENIS Raphaëlle">DENIS Raphaëlle</option>
+              <option value="MAGRINI Alessandra">MAGRINI Alessandra</option>
+              <option value="RIVERA Eva">RIVERA Eva</option>
+              <option value="BASMADJIAN Muriel">BASMADJIAN Muriel</option>
+              <option value="DENIS Raphaëlle">DENIS Raphaëlle</option>
+              <option value="MAGRINI Alessandra">MAGRINI Alessandra</option>
+              <option value="RIVERA Eva">RIVERA Eva</option>
             </select>
           </div>
 
-          <div class="input_box input_text">
+          <div class="input_box input_text input_box_bleu">
             <label for="adherent_eleve1_droitimage">Acceptez-vous la diffusion des images?</label>
             <select id="adherent_eleve1_droitimage" name="adherent_eleve1_droitimage">
               <option value="" selected></option>
               <option value="oui">Oui</option>
               <option value="non">Non</option>
             </select>
+          </div>
+
+        </div>
+
+        <div class="grid_3inputs">
+          <div class="input_box input_text input_box_gris">
+            <label for="adherent_eleve1_contactsup_nom">Autre parent à contacter : Nom</label>
+            <input type="text" name="adherent_eleve1_contactsup_nom" id="adherent_eleve1_contactsup_nom">
+          </div>
+
+          <div class="input_box input_text input_box_gris">
+            <label for="adherent_eleve1_contactsup_prenom">Prénom</label>
+            <input type="text" name="adherent_eleve1_contactsup_prenom" id="adherent_eleve1_contactsup_prenom">
+          </div>
+
+          <div class="input_box input_text input_box_gris">
+            <label for="adherent_eleve1_contactsup_mail">Mail</label>
+            <input type="text" name="adherent_eleve1_contactsup_mail" id="adherent_eleve1_contactsup_mail">
           </div>
         </div>
 
@@ -174,7 +170,7 @@
         <!-- ---------------------------------- -->
         <div class="input_checkbox">
           <input type="checkbox" name="check_eleve2" id="check_eleve2" onclick="ajout_eleve2()">
-          <label for="check_eleve2">Voulez-vous ajouter un élève ?</label>
+          <label for="check_eleve2">Voulez-vous ajouter un deuxième enfant ?</label>
         </div>
       </div>
 
@@ -183,149 +179,167 @@
       <!-- ---------------------------------- -->
 
       <div  id="eleve2" class="hidden">
-        <label for="adherent_eleve2_type">Je suis en formation en :</label>
-        <select id="adherent_eleve2_type" name="adherent_eleve2_type">
+
+        <div class="grid_3inputs">
+          <div class="input_box input_text input_box_gris">
+            <label for="adherent_eleve2_nom">Nom de famille</label>
+            <input type="text" name="adherent_eleve2_nom" id="adherent_eleve2_nom">
+          </div>
+
+          <div class="input_box input_text input_box_gris">
+            <label for="adherent_eleve2_prenom">Prénom</label>
+            <input type="text" name="adherent_eleve2_prenom" id="adherent_eleve2_prenom">
+          </div>
+
+          <div class="input_box input_text input_box_gris">
+            <label for="adherent_eleve2_datenaissance">Date de naissance</label>
+            <input type="date" name="adherent_eleve2_datenaissance" id="adherent_eleve2_datenaissance">
+          </div>
+        </div>
+
+        <div class="grid_3inputs">
+          <div class="input_box input_text input_box_bleu">
+            <label for="adherent_eleve2_InstrumentA">Pour l'instrument</label>
+            <select id="adherent_eleve2_InstrumentA" name="adherent_eleve2_InstrumentA">
             <option value="" selected></option>
-            <option value="Enfant">Enfant</option>
-            <option value="Adulte">Adulte</option>
-        </select>
+            <option value="Alto">Alto</option>
+            <option value="Contrebasse">Contrebasse</option>
+            <option value="Flûte traversière">Flûte traversière</option>
+            <option value="Guitare">Guitare</option>
+            <option value="Harpe">Harpe</option>
+            <option value="Piano">Piano</option>
+            <option value="Trompette">Trompette</option>
+            <option value="Violon">Violon</option>
+            <option value="Violoncelle">Violoncelle</option>
+            </select>
+          </div>
 
-        <div class="">
-          <label for="adherent_eleve2_nom">Nom de famille</label>
-          <input type="text" name="adherent_eleve2_nom" id="adherent_eleve2_nom">
+          <div class="input_box input_text input_box_bleu">
+            <label for="adherent_eleve2_InstrumentA_cahier">Cahier</label>
+            <select id="adherent_eleve2_InstrumentA_cahier" name="adherent_eleve2_InstrumentA_cahier">
+              <option value="" selected></option>
+              <option value="Pré-Twinkle">Pré-Twinkle (débutant)</option>
+              <option value="Cahier 1">Cahier 1</option>
+              <option value="Cahier 2">Cahier 2</option>
+              <option value="Cahier 3">Cahier 3</option>
+              <option value="Cahier 4">Cahier 4</option>
+              <option value="Cahier 5">Cahier 5</option>
+              <option value="Cahier 6">Cahier 6</option>
+              <option value="Cahier 7">Cahier 7</option>
+              <option value="Cahier 8">Cahier 8</option>
+              <option value="Cahier 9">Cahier 9</option>
+              <option value="Cahier 10">Cahier 10</option>
+              <option value="Hors cahier">Hors cahier</option>
+            </select>
+          </div>
+
+          <div class="input_box input_text input_box_bleu">
+            <label for="adherent_eleve2_InstrumentA_prof">Professeur</label>
+            <select id="adherent_eleve2_InstrumentA_prof" name="adherent_eleve2_InstrumentA_prof">
+              <option value="" selected></option>
+              <option value="BASMADJIAN Muriel">BASMADJIAN Muriel</option>
+              <option value="DENIS Raphaëlle">DENIS Raphaëlle</option>
+              <option value="MAGRINI Alessandra">MAGRINI Alessandra</option>
+              <option value="RIVERA Eva">RIVERA Eva</option>
+              <option value="BASMADJIAN Muriel">BASMADJIAN Muriel</option>
+              <option value="DENIS Raphaëlle">DENIS Raphaëlle</option>
+              <option value="MAGRINI Alessandra">MAGRINI Alessandra</option>
+              <option value="RIVERA Eva">RIVERA Eva</option>
+              <option value="BASMADJIAN Muriel">BASMADJIAN Muriel</option>
+              <option value="DENIS Raphaëlle">DENIS Raphaëlle</option>
+              <option value="MAGRINI Alessandra">MAGRINI Alessandra</option>
+              <option value="RIVERA Eva">RIVERA Eva</option>
+            </select>
+          </div>
+
+          <div class="input_box input_text input_box_bleu">
+            <label for="adherent_eleve2_InstrumentB">Deuxième instrument</label>
+            <select id="adherent_eleve2_InstrumentB" name="adherent_eleve2_InstrumentB">
+              <option value="" selected></option>
+              <option value="Alto">Alto</option>
+              <option value="Contrebasse">Contrebasse</option>
+              <option value="Flûte traversière">Flûte traversière</option>
+              <option value="Guitare">Guitare</option>
+              <option value="Harpe">Harpe</option>
+              <option value="Piano">Piano</option>
+              <option value="Trompette">Trompette</option>
+              <option value="Violon">Violon</option>
+              <option value="Violoncelle">Violoncelle</option>
+            </select>
+          </div>
+
+          <div class="input_box input_text input_box_bleu">
+            <label for="adherent_eleve2_InstrumentB_cahier">Cahier</label>
+            <select id="adherent_eleve2_InstrumentB_cahier" name="adherent_eleve2_InstrumentB_cahier">
+              <option value="" selected></option>
+              <option value="Pré-Twinkle">Pré-Twinkle (débutant)</option>
+              <option value="Cahier 1">Cahier 1</option>
+              <option value="Cahier 2">Cahier 2</option>
+              <option value="Cahier 3">Cahier 3</option>
+              <option value="Cahier 4">Cahier 4</option>
+              <option value="Cahier 5">Cahier 5</option>
+              <option value="Cahier 6">Cahier 6</option>
+              <option value="Cahier 7">Cahier 7</option>
+              <option value="Cahier 8">Cahier 8</option>
+              <option value="Cahier 9">Cahier 9</option>
+              <option value="Cahier 10">Cahier 10</option>
+              <option value="Hors cahier">Hors cahier</option>
+            </select>
+          </div>
+
+          <div class="input_box input_text input_box_bleu">
+            <label for="adherent_eleve2_InstrumentB_prof">Professeur</label>
+            <select id="adherent_eleve2_InstrumentB_prof" name="adherent_eleve2_InstrumentB_prof">
+              <option value="" selected></option>
+              <option value="BASMADJIAN Muriel">BASMADJIAN Muriel</option>
+              <option value="DENIS Raphaëlle">DENIS Raphaëlle</option>
+              <option value="MAGRINI Alessandra">MAGRINI Alessandra</option>
+              <option value="RIVERA Eva">RIVERA Eva</option>
+              <option value="BASMADJIAN Muriel">BASMADJIAN Muriel</option>
+              <option value="DENIS Raphaëlle">DENIS Raphaëlle</option>
+              <option value="MAGRINI Alessandra">MAGRINI Alessandra</option>
+              <option value="RIVERA Eva">RIVERA Eva</option>
+              <option value="BASMADJIAN Muriel">BASMADJIAN Muriel</option>
+              <option value="DENIS Raphaëlle">DENIS Raphaëlle</option>
+              <option value="MAGRINI Alessandra">MAGRINI Alessandra</option>
+              <option value="RIVERA Eva">RIVERA Eva</option>
+            </select>
+          </div>
+
+          <div class="input_box input_text input_box_bleu">
+            <label for="adherent_eleve2_droitimage">Acceptez-vous la diffusion des images?</label>
+            <select id="adherent_eleve2_droitimage" name="adherent_eleve2_droitimage">
+              <option value="" selected></option>
+              <option value="oui">Oui</option>
+              <option value="non">Non</option>
+            </select>
+          </div>
+
         </div>
 
-        <div class="">
-          <label for="adherent_eleve2_prenom">Prénom</label>
-          <input type="date" name="adherent_eleve2_prenom" id="adherent_eleve2_prenom">
+        <div class="grid_3inputs">
+          <div class="input_box input_text input_box_gris">
+            <label for="adherent_eleve2_contactsup_nom">Autre parent à contacter : Nom</label>
+            <input type="text" name="adherent_eleve2_contactsup_nom" id="adherent_eleve2_contactsup_nom">
+          </div>
+
+          <div class="input_box input_text input_box_gris">
+            <label for="adherent_eleve2_contactsup_prenom">Prénom</label>
+            <input type="text" name="adherent_eleve2_contactsup_prenom" id="adherent_eleve2_contactsup_prenom">
+          </div>
+
+          <div class="input_box input_text input_box_gris">
+            <label for="adherent_eleve2_contactsup_mail">Mail</label>
+            <input type="text" name="adherent_eleve2_contactsup_mail" id="adherent_eleve2_contactsup_mail">
+          </div>
         </div>
-
-        <div class="">
-          <label for="adherent_eleve2_datenaissance">Date de naissance</label>
-          <input type="text" name="adherent_eleve2_datenaissance" id="adherent_eleve2_datenaissance">
-        </div>
-
-        <div class="">
-          <label for="adherent_eleve2_contactsup_nom">Contact supplémentaite, Nom :</label>
-          <input type="text" name="adherent_eleve2_contactsup_nom" id="adherent_eleve2_contactsup_nom">
-        </div>
-
-        <div class="">
-          <label for="adherent_eleve2_contactsup_prenom">Prénom</label>
-          <input type="text" name="adherent_eleve2_contactsup_prenom" id="adherent_eleve2_contactsup_prenom">
-        </div>
-
-        <div class="">
-          <label for="adherent_eleve2_contactsup_mail">Mail</label>
-          <input type="text" name="adherent_eleve2_contactsup_mail" id="adherent_eleve2_contactsup_mail">
-        </div>
-
-        <label for="adherent_eleve2_InstrumentA">Pour l'instrument</label>
-        <select id="adherent_eleve2_InstrumentA" name="adherent_eleve2_InstrumentA">
-          <option value="" selected></option>
-          <option value="Alto">Alto</option>
-          <option value="Contrebasse">Contrebasse</option>
-          <option value="Flûte traversière">Flûte traversière</option>
-          <option value="Guitare">Guitare</option>
-          <option value="Harpe">Harpe</option>
-          <option value="Piano">Piano</option>
-          <option value="Trompette">Trompette</option>
-          <option value="Violon">Violon</option>
-          <option value="Violoncelle">Violoncelle</option>
-        </select>
-
-        <label for="adherent_eleve2_InstrumentA_cahier">Cahier</label>
-        <select id="adherent_eleve2_InstrumentA_cahier" name="adherent_eleve2_InstrumentA_cahier">
-          <option value="" selected></option>
-          <option value="Pré-Twinkle">Pré-Twinkle (débutant)</option>
-          <option value="Cahier 1">Cahier 1</option>
-          <option value="Cahier 2">Cahier 2</option>
-          <option value="Cahier 3">Cahier 3</option>
-          <option value="Cahier 4">Cahier 4</option>
-          <option value="Cahier 5">Cahier 5</option>
-          <option value="Cahier 6">Cahier 6</option>
-          <option value="Cahier 7">Cahier 7</option>
-          <option value="Cahier 8">Cahier 8</option>
-          <option value="Cahier 9">Cahier 9</option>
-          <option value="Cahier 10">Cahier 10</option>
-        </select>
-
-        <label for="adherent_eleve2_InstrumentA_prof">Professeur</label>
-        <select id="adherent_eleve2_InstrumentA_prof" name="adherent_eleve2_InstrumentA_prof">
-          <option value="basmadjianmuriel">BASMADJIAN Muriel</option>
-          <option value="denisraphaelle">DENIS Raphaëlle</option>
-          <option value="magrinialessandra">MAGRINI Alessandra</option>
-          <option value="riveraeva">RIVERA Eva</option>
-          <option value="basmadjianmuriel">BASMADJIAN Muriel</option>
-          <option value="denisraphaelle">DENIS Raphaëlle</option>
-          <option value="magrinialessandra">MAGRINI Alessandra</option>
-          <option value="riveraeva">RIVERA Eva</option>
-          <option value="basmadjianmuriel">BASMADJIAN Muriel</option>
-          <option value="denisraphaelle">DENIS Raphaëlle</option>
-          <option value="magrinialessandra">MAGRINI Alessandra</option>
-          <option value="riveraeva">RIVERA Eva</option>
-        </select>
-
-        <label for="adherent_eleve2_InstrumentB">Deuxième instrument</label>
-        <select id="adherent_eleve2_InstrumentB" name="adherent_eleve2_InstrumentB">
-          <option value="" selected></option>
-          <option value="Alto">Alto</option>
-          <option value="Contrebasse">Contrebasse</option>
-          <option value="Flûte traversière">Flûte traversière</option>
-          <option value="Guitare">Guitare</option>
-          <option value="Harpe">Harpe</option>
-          <option value="Piano">Piano</option>
-          <option value="Trompette">Trompette</option>
-          <option value="Violon">Violon</option>
-          <option value="Violoncelle">Violoncelle</option>
-        </select>
-
-        <label for="adherent_eleve2_InstrumentB_cahier">Cahier</label>
-        <select id="adherent_eleve2_InstrumentB_cahier" name="adherent_eleve2_InstrumentB_cahier">
-            <option value="" selected></option>
-            <option value="Pré-Twinkle">Pré-Twinkle (débutant)</option>
-            <option value="Cahier 1">Cahier 1</option>
-            <option value="Cahier 2">Cahier 2</option>
-            <option value="Cahier 3">Cahier 3</option>
-            <option value="Cahier 4">Cahier 4</option>
-            <option value="Cahier 5">Cahier 5</option>
-            <option value="Cahier 6">Cahier 6</option>
-            <option value="Cahier 7">Cahier 7</option>
-            <option value="Cahier 8">Cahier 8</option>
-            <option value="Cahier 9">Cahier 9</option>
-            <option value="Cahier 10">Cahier 10</option>
-        </select>
-
-        <label for="adherent_eleve2_InstrumentB_prof">Professeur</label>
-        <select id="adherent_eleve2_InstrumentB_prof" name="adherent_eleve2_InstrumentB_prof">
-          <option value="basmadjianmuriel">BASMADJIAN Muriel</option>
-          <option value="denisraphaelle">DENIS Raphaëlle</option>
-          <option value="magrinialessandra">MAGRINI Alessandra</option>
-          <option value="riveraeva">RIVERA Eva</option>
-          <option value="basmadjianmuriel">BASMADJIAN Muriel</option>
-          <option value="denisraphaelle">DENIS Raphaëlle</option>
-          <option value="magrinialessandra">MAGRINI Alessandra</option>
-          <option value="riveraeva">RIVERA Eva</option>
-          <option value="basmadjianmuriel">BASMADJIAN Muriel</option>
-          <option value="denisraphaelle">DENIS Raphaëlle</option>
-          <option value="magrinialessandra">MAGRINI Alessandra</option>
-          <option value="riveraeva">RIVERA Eva</option>
-        </select>
-
-        <label for="adherent_eleve2_droitimage">Acceptez-vous la diffusion des images et/ou vidéos ?</label>
-        <select id="adherent_eleve2_droitimage" name="adherent_eleve2_droitimage">
-          <option value="" selected></option>
-          <option value="oui">Oui</option>
-          <option value="non">Non</option>
-        </select>
-
 
         <!-- ---------------------------------- -->
         <!-- Voulez-vous ajouter un élève ? -->
         <!-- ---------------------------------- -->
-        <div class="">
+        <div class="input_checkbox">
           <input type="checkbox" name="check_eleve3" id="check_eleve3" onclick="ajout_eleve3()">
-          <label for="check_eleve3">Voulez-vous ajouter un élève ?</label>
+          <label for="check_eleve3">Voulez-vous ajouter un troisième enfant ?</label>
         </div>
 
       </div>
@@ -336,149 +350,167 @@
       <!-- ---------------------------------- -->
 
       <div  id="eleve3" class="hidden">
-        <label for="adherent_eleve3_type">Je suis en formation en :</label>
-        <select id="adherent_eleve3_type" name="adherent_eleve3_type">
+
+        <div class="grid_3inputs">
+          <div class="input_box input_text input_box_gris">
+            <label for="adherent_eleve3_nom">Nom de famille</label>
+            <input type="text" name="adherent_eleve3_nom" id="adherent_eleve3_nom">
+          </div>
+
+          <div class="input_box input_text input_box_gris">
+            <label for="adherent_eleve3_prenom">Prénom</label>
+            <input type="text" name="adherent_eleve3_prenom" id="adherent_eleve3_prenom">
+          </div>
+
+          <div class="input_box input_text input_box_gris">
+            <label for="adherent_eleve3_datenaissance">Date de naissance</label>
+            <input type="date" name="adherent_eleve3_datenaissance" id="adherent_eleve3_datenaissance">
+          </div>
+        </div>
+
+        <div class="grid_3inputs">
+          <div class="input_box input_text input_box_bleu">
+            <label for="adherent_eleve3_InstrumentA">Pour l'instrument</label>
+            <select id="adherent_eleve3_InstrumentA" name="adherent_eleve3_InstrumentA">
             <option value="" selected></option>
-            <option value="Enfant">Enfant</option>
-            <option value="Adulte">Adulte</option>
-        </select>
+            <option value="Alto">Alto</option>
+            <option value="Contrebasse">Contrebasse</option>
+            <option value="Flûte traversière">Flûte traversière</option>
+            <option value="Guitare">Guitare</option>
+            <option value="Harpe">Harpe</option>
+            <option value="Piano">Piano</option>
+            <option value="Trompette">Trompette</option>
+            <option value="Violon">Violon</option>
+            <option value="Violoncelle">Violoncelle</option>
+            </select>
+          </div>
 
-        <div class="">
-          <label for="adherent_eleve3_nom">Nom de famille</label>
-          <input type="text" name="adherent_eleve3_nom" id="adherent_eleve3_nom">
+          <div class="input_box input_text input_box_bleu">
+            <label for="adherent_eleve3_InstrumentA_cahier">Cahier</label>
+            <select id="adherent_eleve3_InstrumentA_cahier" name="adherent_eleve3_InstrumentA_cahier">
+              <option value="" selected></option>
+              <option value="Pré-Twinkle">Pré-Twinkle (débutant)</option>
+              <option value="Cahier 1">Cahier 1</option>
+              <option value="Cahier 2">Cahier 2</option>
+              <option value="Cahier 3">Cahier 3</option>
+              <option value="Cahier 4">Cahier 4</option>
+              <option value="Cahier 5">Cahier 5</option>
+              <option value="Cahier 6">Cahier 6</option>
+              <option value="Cahier 7">Cahier 7</option>
+              <option value="Cahier 8">Cahier 8</option>
+              <option value="Cahier 9">Cahier 9</option>
+              <option value="Cahier 10">Cahier 10</option>
+              <option value="Hors cahier">Hors cahier</option>
+            </select>
+          </div>
+
+          <div class="input_box input_text input_box_bleu">
+            <label for="adherent_eleve3_InstrumentA_prof">Professeur</label>
+            <select id="adherent_eleve3_InstrumentA_prof" name="adherent_eleve3_InstrumentA_prof">
+              <option value="" selected></option>
+              <option value="BASMADJIAN Muriel">BASMADJIAN Muriel</option>
+              <option value="DENIS Raphaëlle">DENIS Raphaëlle</option>
+              <option value="MAGRINI Alessandra">MAGRINI Alessandra</option>
+              <option value="RIVERA Eva">RIVERA Eva</option>
+              <option value="BASMADJIAN Muriel">BASMADJIAN Muriel</option>
+              <option value="DENIS Raphaëlle">DENIS Raphaëlle</option>
+              <option value="MAGRINI Alessandra">MAGRINI Alessandra</option>
+              <option value="RIVERA Eva">RIVERA Eva</option>
+              <option value="BASMADJIAN Muriel">BASMADJIAN Muriel</option>
+              <option value="DENIS Raphaëlle">DENIS Raphaëlle</option>
+              <option value="MAGRINI Alessandra">MAGRINI Alessandra</option>
+              <option value="RIVERA Eva">RIVERA Eva</option>
+            </select>
+          </div>
+
+          <div class="input_box input_text input_box_bleu">
+            <label for="adherent_eleve3_InstrumentB">Deuxième instrument</label>
+            <select id="adherent_eleve3_InstrumentB" name="adherent_eleve3_InstrumentB">
+              <option value="" selected></option>
+              <option value="Alto">Alto</option>
+              <option value="Contrebasse">Contrebasse</option>
+              <option value="Flûte traversière">Flûte traversière</option>
+              <option value="Guitare">Guitare</option>
+              <option value="Harpe">Harpe</option>
+              <option value="Piano">Piano</option>
+              <option value="Trompette">Trompette</option>
+              <option value="Violon">Violon</option>
+              <option value="Violoncelle">Violoncelle</option>
+            </select>
+          </div>
+
+          <div class="input_box input_text input_box_bleu">
+            <label for="adherent_eleve3_InstrumentB_cahier">Cahier</label>
+            <select id="adherent_eleve3_InstrumentB_cahier" name="adherent_eleve3_InstrumentB_cahier">
+              <option value="" selected></option>
+              <option value="Pré-Twinkle">Pré-Twinkle (débutant)</option>
+              <option value="Cahier 1">Cahier 1</option>
+              <option value="Cahier 2">Cahier 2</option>
+              <option value="Cahier 3">Cahier 3</option>
+              <option value="Cahier 4">Cahier 4</option>
+              <option value="Cahier 5">Cahier 5</option>
+              <option value="Cahier 6">Cahier 6</option>
+              <option value="Cahier 7">Cahier 7</option>
+              <option value="Cahier 8">Cahier 8</option>
+              <option value="Cahier 9">Cahier 9</option>
+              <option value="Cahier 10">Cahier 10</option>
+              <option value="Hors cahier">Hors cahier</option>
+            </select>
+          </div>
+
+          <div class="input_box input_text input_box_bleu">
+            <label for="adherent_eleve3_InstrumentB_prof">Professeur</label>
+            <select id="adherent_eleve3_InstrumentB_prof" name="adherent_eleve3_InstrumentB_prof">
+              <option value="" selected></option>
+              <option value="BASMADJIAN Muriel">BASMADJIAN Muriel</option>
+              <option value="DENIS Raphaëlle">DENIS Raphaëlle</option>
+              <option value="MAGRINI Alessandra">MAGRINI Alessandra</option>
+              <option value="RIVERA Eva">RIVERA Eva</option>
+              <option value="BASMADJIAN Muriel">BASMADJIAN Muriel</option>
+              <option value="DENIS Raphaëlle">DENIS Raphaëlle</option>
+              <option value="MAGRINI Alessandra">MAGRINI Alessandra</option>
+              <option value="RIVERA Eva">RIVERA Eva</option>
+              <option value="BASMADJIAN Muriel">BASMADJIAN Muriel</option>
+              <option value="DENIS Raphaëlle">DENIS Raphaëlle</option>
+              <option value="MAGRINI Alessandra">MAGRINI Alessandra</option>
+              <option value="RIVERA Eva">RIVERA Eva</option>
+            </select>
+          </div>
+
+          <div class="input_box input_text input_box_bleu">
+            <label for="adherent_eleve3_droitimage">Acceptez-vous la diffusion des images?</label>
+            <select id="adherent_eleve3_droitimage" name="adherent_eleve3_droitimage">
+              <option value="" selected></option>
+              <option value="oui">Oui</option>
+              <option value="non">Non</option>
+            </select>
+          </div>
+
         </div>
 
-        <div class="">
-          <label for="adherent_eleve3_prenom">Prénom</label>
-          <input type="date" name="adherent_eleve3_prenom" id="adherent_eleve3_prenom">
+        <div class="grid_3inputs">
+          <div class="input_box input_text input_box_gris">
+            <label for="adherent_eleve3_contactsup_nom">Autre parent à contacter : Nom</label>
+            <input type="text" name="adherent_eleve3_contactsup_nom" id="adherent_eleve3_contactsup_nom">
+          </div>
+
+          <div class="input_box input_text input_box_gris">
+            <label for="adherent_eleve3_contactsup_prenom">Prénom</label>
+            <input type="text" name="adherent_eleve3_contactsup_prenom" id="adherent_eleve3_contactsup_prenom">
+          </div>
+
+          <div class="input_box input_text input_box_gris">
+            <label for="adherent_eleve3_contactsup_mail">Mail</label>
+            <input type="text" name="adherent_eleve3_contactsup_mail" id="adherent_eleve3_contactsup_mail">
+          </div>
         </div>
-
-        <div class="">
-          <label for="adherent_eleve3_datenaissance">Date de naissance</label>
-          <input type="text" name="adherent_eleve3_datenaissance" id="adherent_eleve3_datenaissance">
-        </div>
-
-        <div class="">
-          <label for="adherent_eleve3_contactsup_nom">Contact supplémentaite, Nom :</label>
-          <input type="text" name="adherent_eleve3_contactsup_nom" id="adherent_eleve3_contactsup_nom">
-        </div>
-
-        <div class="">
-          <label for="adherent_eleve3_contactsup_prenom">Prénom</label>
-          <input type="text" name="adherent_eleve3_contactsup_prenom" id="adherent_eleve3_contactsup_prenom">
-        </div>
-
-        <div class="">
-          <label for="adherent_eleve3_contactsup_mail">Mail</label>
-          <input type="text" name="adherent_eleve3_contactsup_mail" id="adherent_eleve3_contactsup_mail">
-        </div>
-
-        <label for="adherent_eleve3_InstrumentA">Pour l'instrument</label>
-        <select id="adherent_eleve3_InstrumentA" name="adherent_eleve3_InstrumentA">
-          <option value="" selected></option>
-          <option value="Alto">Alto</option>
-          <option value="Contrebasse">Contrebasse</option>
-          <option value="Flûte traversière">Flûte traversière</option>
-          <option value="Guitare">Guitare</option>
-          <option value="Harpe">Harpe</option>
-          <option value="Piano">Piano</option>
-          <option value="Trompette">Trompette</option>
-          <option value="Violon">Violon</option>
-          <option value="Violoncelle">Violoncelle</option>
-        </select>
-
-        <label for="adherent_eleve3_InstrumentA_cahier">Cahier</label>
-        <select id="adherent_eleve3_InstrumentA_cahier" name="adherent_eleve3_InstrumentA_cahier">
-          <option value="" selected></option>
-          <option value="Pré-Twinkle">Pré-Twinkle (débutant)</option>
-          <option value="Cahier 1">Cahier 1</option>
-          <option value="Cahier 2">Cahier 2</option>
-          <option value="Cahier 3">Cahier 3</option>
-          <option value="Cahier 4">Cahier 4</option>
-          <option value="Cahier 5">Cahier 5</option>
-          <option value="Cahier 6">Cahier 6</option>
-          <option value="Cahier 7">Cahier 7</option>
-          <option value="Cahier 8">Cahier 8</option>
-          <option value="Cahier 9">Cahier 9</option>
-          <option value="Cahier 10">Cahier 10</option>
-        </select>
-
-        <label for="adherent_eleve3_InstrumentA_prof">Professeur</label>
-        <select id="adherent_eleve3_InstrumentA_prof" name="adherent_eleve3_InstrumentA_prof">
-          <option value="basmadjianmuriel">BASMADJIAN Muriel</option>
-          <option value="denisraphaelle">DENIS Raphaëlle</option>
-          <option value="magrinialessandra">MAGRINI Alessandra</option>
-          <option value="riveraeva">RIVERA Eva</option>
-          <option value="basmadjianmuriel">BASMADJIAN Muriel</option>
-          <option value="denisraphaelle">DENIS Raphaëlle</option>
-          <option value="magrinialessandra">MAGRINI Alessandra</option>
-          <option value="riveraeva">RIVERA Eva</option>
-          <option value="basmadjianmuriel">BASMADJIAN Muriel</option>
-          <option value="denisraphaelle">DENIS Raphaëlle</option>
-          <option value="magrinialessandra">MAGRINI Alessandra</option>
-          <option value="riveraeva">RIVERA Eva</option>
-        </select>
-
-        <label for="adherent_eleve3_InstrumentB">Deuxième instrument</label>
-        <select id="adherent_eleve3_InstrumentB" name="adherent_eleve3_InstrumentB">
-          <option value="" selected></option>
-          <option value="Alto">Alto</option>
-          <option value="Contrebasse">Contrebasse</option>
-          <option value="Flûte traversière">Flûte traversière</option>
-          <option value="Guitare">Guitare</option>
-          <option value="Harpe">Harpe</option>
-          <option value="Piano">Piano</option>
-          <option value="Trompette">Trompette</option>
-          <option value="Violon">Violon</option>
-          <option value="Violoncelle">Violoncelle</option>
-        </select>
-
-        <label for="adherent_eleve3_InstrumentB_cahier">Cahier</label>
-        <select id="adherent_eleve3_InstrumentB_cahier" name="adherent_eleve3_InstrumentB_cahier">
-            <option value="" selected></option>
-            <option value="Pré-Twinkle">Pré-Twinkle (débutant)</option>
-            <option value="Cahier 1">Cahier 1</option>
-            <option value="Cahier 2">Cahier 2</option>
-            <option value="Cahier 3">Cahier 3</option>
-            <option value="Cahier 4">Cahier 4</option>
-            <option value="Cahier 5">Cahier 5</option>
-            <option value="Cahier 6">Cahier 6</option>
-            <option value="Cahier 7">Cahier 7</option>
-            <option value="Cahier 8">Cahier 8</option>
-            <option value="Cahier 9">Cahier 9</option>
-            <option value="Cahier 10">Cahier 10</option>
-        </select>
-
-        <label for="adherent_eleve3_InstrumentB_prof">Professeur</label>
-        <select id="adherent_eleve3_InstrumentB_prof" name="adherent_eleve3_InstrumentB_prof">
-          <option value="basmadjianmuriel">BASMADJIAN Muriel</option>
-          <option value="denisraphaelle">DENIS Raphaëlle</option>
-          <option value="magrinialessandra">MAGRINI Alessandra</option>
-          <option value="riveraeva">RIVERA Eva</option>
-          <option value="basmadjianmuriel">BASMADJIAN Muriel</option>
-          <option value="denisraphaelle">DENIS Raphaëlle</option>
-          <option value="magrinialessandra">MAGRINI Alessandra</option>
-          <option value="riveraeva">RIVERA Eva</option>
-          <option value="basmadjianmuriel">BASMADJIAN Muriel</option>
-          <option value="denisraphaelle">DENIS Raphaëlle</option>
-          <option value="magrinialessandra">MAGRINI Alessandra</option>
-          <option value="riveraeva">RIVERA Eva</option>
-        </select>
-
-        <label for="adherent_eleve3_droitimage">Acceptez-vous la diffusion des images et/ou vidéos ?</label>
-        <select id="adherent_eleve3_droitimage" name="adherent_eleve3_droitimage">
-          <option value="" selected></option>
-          <option value="oui">Oui</option>
-          <option value="non">Non</option>
-        </select>
-
 
         <!-- ---------------------------------- -->
         <!-- Voulez-vous ajouter un élève ? -->
         <!-- ---------------------------------- -->
-        <div class="">
+        <div class="input_checkbox">
           <input type="checkbox" name="check_eleve4" id="check_eleve4" onclick="ajout_eleve4()">
-          <label for="check_eleve4">Voulez-vous ajouter un élève ?</label>
+          <label for="check_eleve4">Voulez-vous ajouter un quatrième enfant ?</label>
         </div>
 
       </div>
@@ -488,149 +520,165 @@
       <!-- ---------------------------------- -->
 
       <div  id="eleve4" class="hidden">
-        <label for="adherent_eleve4_type">Je suis en formation en :</label>
-        <select id="adherent_eleve4_type" name="adherent_eleve4_type">
+
+        <div class="grid_3inputs">
+          <div class="input_box input_text input_box_gris">
+            <label for="adherent_eleve4_nom">Nom de famille</label>
+            <input type="text" name="adherent_eleve4_nom" id="adherent_eleve4_nom">
+          </div>
+
+          <div class="input_box input_text input_box_gris">
+            <label for="adherent_eleve4_prenom">Prénom</label>
+            <input type="text" name="adherent_eleve4_prenom" id="adherent_eleve4_prenom">
+          </div>
+
+          <div class="input_box input_text input_box_gris">
+            <label for="adherent_eleve4_datenaissance">Date de naissance</label>
+            <input type="date" name="adherent_eleve4_datenaissance" id="adherent_eleve4_datenaissance">
+          </div>
+        </div>
+
+        <div class="grid_3inputs">
+          <div class="input_box input_text input_box_bleu">
+            <label for="adherent_eleve4_InstrumentA">Pour l'instrument</label>
+            <select id="adherent_eleve4_InstrumentA" name="adherent_eleve4_InstrumentA">
             <option value="" selected></option>
-            <option value="Enfant">Enfant</option>
-            <option value="Adulte">Adulte</option>
-        </select>
+            <option value="Alto">Alto</option>
+            <option value="Contrebasse">Contrebasse</option>
+            <option value="Flûte traversière">Flûte traversière</option>
+            <option value="Guitare">Guitare</option>
+            <option value="Harpe">Harpe</option>
+            <option value="Piano">Piano</option>
+            <option value="Trompette">Trompette</option>
+            <option value="Violon">Violon</option>
+            <option value="Violoncelle">Violoncelle</option>
+            </select>
+          </div>
 
-        <div class="">
-          <label for="adherent_eleve4_nom">Nom de famille</label>
-          <input type="text" name="adherent_eleve4_nom" id="adherent_eleve4_nom">
+          <div class="input_box input_text input_box_bleu">
+            <label for="adherent_eleve4_InstrumentA_cahier">Cahier</label>
+            <select id="adherent_eleve4_InstrumentA_cahier" name="adherent_eleve4_InstrumentA_cahier">
+              <option value="" selected></option>
+              <option value="Pré-Twinkle">Pré-Twinkle (débutant)</option>
+              <option value="Cahier 1">Cahier 1</option>
+              <option value="Cahier 2">Cahier 2</option>
+              <option value="Cahier 3">Cahier 3</option>
+              <option value="Cahier 4">Cahier 4</option>
+              <option value="Cahier 5">Cahier 5</option>
+              <option value="Cahier 6">Cahier 6</option>
+              <option value="Cahier 7">Cahier 7</option>
+              <option value="Cahier 8">Cahier 8</option>
+              <option value="Cahier 9">Cahier 9</option>
+              <option value="Cahier 10">Cahier 10</option>
+              <option value="Hors cahier">Hors cahier</option>
+            </select>
+          </div>
+
+          <div class="input_box input_text input_box_bleu">
+            <label for="adherent_eleve4_InstrumentA_prof">Professeur</label>
+            <select id="adherent_eleve4_InstrumentA_prof" name="adherent_eleve4_InstrumentA_prof">
+              <option value="" selected></option>
+              <option value="BASMADJIAN Muriel">BASMADJIAN Muriel</option>
+              <option value="DENIS Raphaëlle">DENIS Raphaëlle</option>
+              <option value="MAGRINI Alessandra">MAGRINI Alessandra</option>
+              <option value="RIVERA Eva">RIVERA Eva</option>
+              <option value="BASMADJIAN Muriel">BASMADJIAN Muriel</option>
+              <option value="DENIS Raphaëlle">DENIS Raphaëlle</option>
+              <option value="MAGRINI Alessandra">MAGRINI Alessandra</option>
+              <option value="RIVERA Eva">RIVERA Eva</option>
+              <option value="BASMADJIAN Muriel">BASMADJIAN Muriel</option>
+              <option value="DENIS Raphaëlle">DENIS Raphaëlle</option>
+              <option value="MAGRINI Alessandra">MAGRINI Alessandra</option>
+              <option value="RIVERA Eva">RIVERA Eva</option>
+            </select>
+          </div>
+
+          <div class="input_box input_text input_box_bleu">
+            <label for="adherent_eleve4_InstrumentB">Deuxième instrument</label>
+            <select id="adherent_eleve4_InstrumentB" name="adherent_eleve4_InstrumentB">
+              <option value="" selected></option>
+              <option value="Alto">Alto</option>
+              <option value="Contrebasse">Contrebasse</option>
+              <option value="Flûte traversière">Flûte traversière</option>
+              <option value="Guitare">Guitare</option>
+              <option value="Harpe">Harpe</option>
+              <option value="Piano">Piano</option>
+              <option value="Trompette">Trompette</option>
+              <option value="Violon">Violon</option>
+              <option value="Violoncelle">Violoncelle</option>
+            </select>
+          </div>
+
+          <div class="input_box input_text input_box_bleu">
+            <label for="adherent_eleve4_InstrumentB_cahier">Cahier</label>
+            <select id="adherent_eleve4_InstrumentB_cahier" name="adherent_eleve4_InstrumentB_cahier">
+              <option value="" selected></option>
+              <option value="Pré-Twinkle">Pré-Twinkle (débutant)</option>
+              <option value="Cahier 1">Cahier 1</option>
+              <option value="Cahier 2">Cahier 2</option>
+              <option value="Cahier 3">Cahier 3</option>
+              <option value="Cahier 4">Cahier 4</option>
+              <option value="Cahier 5">Cahier 5</option>
+              <option value="Cahier 6">Cahier 6</option>
+              <option value="Cahier 7">Cahier 7</option>
+              <option value="Cahier 8">Cahier 8</option>
+              <option value="Cahier 9">Cahier 9</option>
+              <option value="Cahier 10">Cahier 10</option>
+              <option value="Hors cahier">Hors cahier</option>
+            </select>
+          </div>
+
+          <div class="input_box input_text input_box_bleu">
+            <label for="adherent_eleve4_InstrumentB_prof">Professeur</label>
+            <select id="adherent_eleve4_InstrumentB_prof" name="adherent_eleve4_InstrumentB_prof">
+              <option value="" selected></option>
+              <option value="BASMADJIAN Muriel">BASMADJIAN Muriel</option>
+              <option value="DENIS Raphaëlle">DENIS Raphaëlle</option>
+              <option value="MAGRINI Alessandra">MAGRINI Alessandra</option>
+              <option value="RIVERA Eva">RIVERA Eva</option>
+              <option value="BASMADJIAN Muriel">BASMADJIAN Muriel</option>
+              <option value="DENIS Raphaëlle">DENIS Raphaëlle</option>
+              <option value="MAGRINI Alessandra">MAGRINI Alessandra</option>
+              <option value="RIVERA Eva">RIVERA Eva</option>
+              <option value="BASMADJIAN Muriel">BASMADJIAN Muriel</option>
+              <option value="DENIS Raphaëlle">DENIS Raphaëlle</option>
+              <option value="MAGRINI Alessandra">MAGRINI Alessandra</option>
+              <option value="RIVERA Eva">RIVERA Eva</option>
+            </select>
+          </div>
+
+          <div class="input_box input_text input_box_bleu">
+            <label for="adherent_eleve4_droitimage">Acceptez-vous la diffusion des images?</label>
+            <select id="adherent_eleve4_droitimage" name="adherent_eleve4_droitimage">
+              <option value="" selected></option>
+              <option value="oui">Oui</option>
+              <option value="non">Non</option>
+            </select>
+          </div>
         </div>
+        <div class="grid_3inputs">
+          <div class="input_box input_text input_box_gris">
+            <label for="adherent_eleve4_contactsup_nom">Autre parent à contacter : Nom</label>
+            <input type="text" name="adherent_eleve4_contactsup_nom" id="adherent_eleve4_contactsup_nom">
+          </div>
 
-        <div class="">
-          <label for="adherent_eleve4_prenom">Prénom</label>
-          <input type="date" name="adherent_eleve4_prenom" id="adherent_eleve4_prenom">
+          <div class="input_box input_text input_box_gris">
+            <label for="adherent_eleve4_contactsup_prenom">Prénom</label>
+            <input type="text" name="adherent_eleve4_contactsup_prenom" id="adherent_eleve4_contactsup_prenom">
+          </div>
+
+          <div class="input_box input_text input_box_gris">
+            <label for="adherent_eleve4_contactsup_mail">Mail</label>
+            <input type="text" name="adherent_eleve4_contactsup_mail" id="adherent_eleve4_contactsup_mail">
+          </div>
         </div>
-
-        <div class="">
-          <label for="adherent_eleve4_datenaissance">Date de naissance</label>
-          <input type="text" name="adherent_eleve4_datenaissance" id="adherent_eleve4_datenaissance">
-        </div>
-
-        <div class="">
-          <label for="adherent_eleve4_contactsup_nom">Contact supplémentaite, Nom :</label>
-          <input type="text" name="adherent_eleve4_contactsup_nom" id="adherent_eleve4_contactsup_nom">
-        </div>
-
-        <div class="">
-          <label for="adherent_eleve4_contactsup_prenom">Prénom</label>
-          <input type="text" name="adherent_eleve4_contactsup_prenom" id="adherent_eleve4_contactsup_prenom">
-        </div>
-
-        <div class="">
-          <label for="adherent_eleve4_contactsup_mail">Mail</label>
-          <input type="text" name="adherent_eleve4_contactsup_mail" id="adherent_eleve4_contactsup_mail">
-        </div>
-
-        <label for="adherent_eleve4_InstrumentA">Pour l'instrument</label>
-        <select id="adherent_eleve4_InstrumentA" name="adherent_eleve4_InstrumentA">
-          <option value="" selected></option>
-          <option value="Alto">Alto</option>
-          <option value="Contrebasse">Contrebasse</option>
-          <option value="Flûte traversière">Flûte traversière</option>
-          <option value="Guitare">Guitare</option>
-          <option value="Harpe">Harpe</option>
-          <option value="Piano">Piano</option>
-          <option value="Trompette">Trompette</option>
-          <option value="Violon">Violon</option>
-          <option value="Violoncelle">Violoncelle</option>
-        </select>
-
-        <label for="adherent_eleve4_InstrumentA_cahier">Cahier</label>
-        <select id="adherent_eleve4_InstrumentA_cahier" name="adherent_eleve4_InstrumentA_cahier">
-          <option value="" selected></option>
-          <option value="Pré-Twinkle">Pré-Twinkle (débutant)</option>
-          <option value="Cahier 1">Cahier 1</option>
-          <option value="Cahier 2">Cahier 2</option>
-          <option value="Cahier 3">Cahier 3</option>
-          <option value="Cahier 4">Cahier 4</option>
-          <option value="Cahier 5">Cahier 5</option>
-          <option value="Cahier 6">Cahier 6</option>
-          <option value="Cahier 7">Cahier 7</option>
-          <option value="Cahier 8">Cahier 8</option>
-          <option value="Cahier 9">Cahier 9</option>
-          <option value="Cahier 10">Cahier 10</option>
-        </select>
-
-        <label for="adherent_eleve4_InstrumentA_prof">Professeur</label>
-        <select id="adherent_eleve4_InstrumentA_prof" name="adherent_eleve4_InstrumentA_prof">
-          <option value="basmadjianmuriel">BASMADJIAN Muriel</option>
-          <option value="denisraphaelle">DENIS Raphaëlle</option>
-          <option value="magrinialessandra">MAGRINI Alessandra</option>
-          <option value="riveraeva">RIVERA Eva</option>
-          <option value="basmadjianmuriel">BASMADJIAN Muriel</option>
-          <option value="denisraphaelle">DENIS Raphaëlle</option>
-          <option value="magrinialessandra">MAGRINI Alessandra</option>
-          <option value="riveraeva">RIVERA Eva</option>
-          <option value="basmadjianmuriel">BASMADJIAN Muriel</option>
-          <option value="denisraphaelle">DENIS Raphaëlle</option>
-          <option value="magrinialessandra">MAGRINI Alessandra</option>
-          <option value="riveraeva">RIVERA Eva</option>
-        </select>
-
-        <label for="adherent_eleve4_InstrumentB">Deuxième instrument</label>
-        <select id="adherent_eleve4_InstrumentB" name="adherent_eleve4_InstrumentB">
-          <option value="" selected></option>
-          <option value="Alto">Alto</option>
-          <option value="Contrebasse">Contrebasse</option>
-          <option value="Flûte traversière">Flûte traversière</option>
-          <option value="Guitare">Guitare</option>
-          <option value="Harpe">Harpe</option>
-          <option value="Piano">Piano</option>
-          <option value="Trompette">Trompette</option>
-          <option value="Violon">Violon</option>
-          <option value="Violoncelle">Violoncelle</option>
-        </select>
-
-        <label for="adherent_eleve4_InstrumentB_cahier">Cahier</label>
-        <select id="adherent_eleve4_InstrumentB_cahier" name="adherent_eleve4_InstrumentB_cahier">
-            <option value="" selected></option>
-            <option value="Pré-Twinkle">Pré-Twinkle (débutant)</option>
-            <option value="Cahier 1">Cahier 1</option>
-            <option value="Cahier 2">Cahier 2</option>
-            <option value="Cahier 3">Cahier 3</option>
-            <option value="Cahier 4">Cahier 4</option>
-            <option value="Cahier 5">Cahier 5</option>
-            <option value="Cahier 6">Cahier 6</option>
-            <option value="Cahier 7">Cahier 7</option>
-            <option value="Cahier 8">Cahier 8</option>
-            <option value="Cahier 9">Cahier 9</option>
-            <option value="Cahier 10">Cahier 10</option>
-        </select>
-
-        <label for="adherent_eleve4_InstrumentB_prof">Professeur</label>
-        <select id="adherent_eleve4_InstrumentB_prof" name="adherent_eleve4_InstrumentB_prof">
-          <option value="basmadjianmuriel">BASMADJIAN Muriel</option>
-          <option value="denisraphaelle">DENIS Raphaëlle</option>
-          <option value="magrinialessandra">MAGRINI Alessandra</option>
-          <option value="riveraeva">RIVERA Eva</option>
-          <option value="basmadjianmuriel">BASMADJIAN Muriel</option>
-          <option value="denisraphaelle">DENIS Raphaëlle</option>
-          <option value="magrinialessandra">MAGRINI Alessandra</option>
-          <option value="riveraeva">RIVERA Eva</option>
-          <option value="basmadjianmuriel">BASMADJIAN Muriel</option>
-          <option value="denisraphaelle">DENIS Raphaëlle</option>
-          <option value="magrinialessandra">MAGRINI Alessandra</option>
-          <option value="riveraeva">RIVERA Eva</option>
-        </select>
-
-        <label for="adherent_eleve4_droitimage">Acceptez-vous la diffusion des images et/ou vidéos ?</label>
-        <select id="adherent_eleve4_droitimage" name="adherent_eleve4_droitimage">
-          <option value="" selected></option>
-          <option value="oui">Oui</option>
-          <option value="non">Non</option>
-        </select>
-
 
         <!-- ---------------------------------- -->
         <!-- Voulez-vous ajouter un élève ? -->
         <!-- ---------------------------------- -->
-        <div class="">
+        <div class="input_checkbox">
           <input type="checkbox" name="check_eleve5" id="check_eleve5" onclick="ajout_eleve5()">
-          <label for="check_eleve5">Voulez-vous ajouter un élève ?</label>
+          <label for="check_eleve5">Voulez-vous ajouter un cinquième enfant ?</label>
         </div>
 
       </div>
@@ -640,145 +688,162 @@
       <!-- ---------------------------------- -->
 
       <div  id="eleve5" class="hidden">
-        <label for="adherent_eleve5_type">Je suis en formation en :</label>
-        <select id="adherent_eleve5_type" name="adherent_eleve5_type">
+
+        <div class="grid_3inputs">
+          <div class="input_box input_text input_box_gris">
+            <label for="adherent_eleve5_nom">Nom de famille</label>
+            <input type="text" name="adherent_eleve5_nom" id="adherent_eleve5_nom">
+          </div>
+
+          <div class="input_box input_text input_box_gris">
+            <label for="adherent_eleve5_prenom">Prénom</label>
+            <input type="text" name="adherent_eleve5_prenom" id="adherent_eleve5_prenom">
+          </div>
+
+          <div class="input_box input_text input_box_gris">
+            <label for="adherent_eleve5_datenaissance">Date de naissance</label>
+            <input type="date" name="adherent_eleve5_datenaissance" id="adherent_eleve5_datenaissance">
+          </div>
+        </div>
+
+        <div class="grid_3inputs">
+          <div class="input_box input_text input_box_bleu">
+            <label for="adherent_eleve5_InstrumentA">Pour l'instrument</label>
+            <select id="adherent_eleve5_InstrumentA" name="adherent_eleve5_InstrumentA">
             <option value="" selected></option>
-            <option value="Enfant">Enfant</option>
-            <option value="Adulte">Adulte</option>
-        </select>
+            <option value="Alto">Alto</option>
+            <option value="Contrebasse">Contrebasse</option>
+            <option value="Flûte traversière">Flûte traversière</option>
+            <option value="Guitare">Guitare</option>
+            <option value="Harpe">Harpe</option>
+            <option value="Piano">Piano</option>
+            <option value="Trompette">Trompette</option>
+            <option value="Violon">Violon</option>
+            <option value="Violoncelle">Violoncelle</option>
+            </select>
+          </div>
 
-        <div class="">
-          <label for="adherent_eleve5_nom">Nom de famille</label>
-          <input type="text" name="adherent_eleve5_nom" id="adherent_eleve5_nom">
+          <div class="input_box input_text input_box_bleu">
+            <label for="adherent_eleve5_InstrumentA_cahier">Cahier</label>
+            <select id="adherent_eleve5_InstrumentA_cahier" name="adherent_eleve5_InstrumentA_cahier">
+              <option value="" selected></option>
+              <option value="Pré-Twinkle">Pré-Twinkle (débutant)</option>
+              <option value="Cahier 1">Cahier 1</option>
+              <option value="Cahier 2">Cahier 2</option>
+              <option value="Cahier 3">Cahier 3</option>
+              <option value="Cahier 4">Cahier 4</option>
+              <option value="Cahier 5">Cahier 5</option>
+              <option value="Cahier 6">Cahier 6</option>
+              <option value="Cahier 7">Cahier 7</option>
+              <option value="Cahier 8">Cahier 8</option>
+              <option value="Cahier 9">Cahier 9</option>
+              <option value="Cahier 10">Cahier 10</option>
+              <option value="Hors cahier">Hors cahier</option>
+            </select>
+          </div>
+
+          <div class="input_box input_text input_box_bleu">
+            <label for="adherent_eleve5_InstrumentA_prof">Professeur</label>
+            <select id="adherent_eleve5_InstrumentA_prof" name="adherent_eleve5_InstrumentA_prof">
+              <option value="" selected></option>
+              <option value="BASMADJIAN Muriel">BASMADJIAN Muriel</option>
+              <option value="DENIS Raphaëlle">DENIS Raphaëlle</option>
+              <option value="MAGRINI Alessandra">MAGRINI Alessandra</option>
+              <option value="RIVERA Eva">RIVERA Eva</option>
+              <option value="BASMADJIAN Muriel">BASMADJIAN Muriel</option>
+              <option value="DENIS Raphaëlle">DENIS Raphaëlle</option>
+              <option value="MAGRINI Alessandra">MAGRINI Alessandra</option>
+              <option value="RIVERA Eva">RIVERA Eva</option>
+              <option value="BASMADJIAN Muriel">BASMADJIAN Muriel</option>
+              <option value="DENIS Raphaëlle">DENIS Raphaëlle</option>
+              <option value="MAGRINI Alessandra">MAGRINI Alessandra</option>
+              <option value="RIVERA Eva">RIVERA Eva</option>
+            </select>
+          </div>
+
+          <div class="input_box input_text input_box_bleu">
+            <label for="adherent_eleve5_InstrumentB">Deuxième instrument</label>
+            <select id="adherent_eleve5_InstrumentB" name="adherent_eleve5_InstrumentB">
+              <option value="" selected></option>
+              <option value="Alto">Alto</option>
+              <option value="Contrebasse">Contrebasse</option>
+              <option value="Flûte traversière">Flûte traversière</option>
+              <option value="Guitare">Guitare</option>
+              <option value="Harpe">Harpe</option>
+              <option value="Piano">Piano</option>
+              <option value="Trompette">Trompette</option>
+              <option value="Violon">Violon</option>
+              <option value="Violoncelle">Violoncelle</option>
+            </select>
+          </div>
+
+          <div class="input_box input_text input_box_bleu">
+            <label for="adherent_eleve5_InstrumentB_cahier">Cahier</label>
+            <select id="adherent_eleve5_InstrumentB_cahier" name="adherent_eleve5_InstrumentB_cahier">
+              <option value="" selected></option>
+              <option value="Pré-Twinkle">Pré-Twinkle (débutant)</option>
+              <option value="Cahier 1">Cahier 1</option>
+              <option value="Cahier 2">Cahier 2</option>
+              <option value="Cahier 3">Cahier 3</option>
+              <option value="Cahier 4">Cahier 4</option>
+              <option value="Cahier 5">Cahier 5</option>
+              <option value="Cahier 6">Cahier 6</option>
+              <option value="Cahier 7">Cahier 7</option>
+              <option value="Cahier 8">Cahier 8</option>
+              <option value="Cahier 9">Cahier 9</option>
+              <option value="Cahier 10">Cahier 10</option>
+              <option value="Hors cahier">Hors cahier</option>
+            </select>
+          </div>
+
+          <div class="input_box input_text input_box_bleu">
+            <label for="adherent_eleve5_InstrumentB_prof">Professeur</label>
+            <select id="adherent_eleve5_InstrumentB_prof" name="adherent_eleve5_InstrumentB_prof">
+              <option value="" selected></option>
+              <option value="BASMADJIAN Muriel">BASMADJIAN Muriel</option>
+              <option value="DENIS Raphaëlle">DENIS Raphaëlle</option>
+              <option value="MAGRINI Alessandra">MAGRINI Alessandra</option>
+              <option value="RIVERA Eva">RIVERA Eva</option>
+              <option value="BASMADJIAN Muriel">BASMADJIAN Muriel</option>
+              <option value="DENIS Raphaëlle">DENIS Raphaëlle</option>
+              <option value="MAGRINI Alessandra">MAGRINI Alessandra</option>
+              <option value="RIVERA Eva">RIVERA Eva</option>
+              <option value="BASMADJIAN Muriel">BASMADJIAN Muriel</option>
+              <option value="DENIS Raphaëlle">DENIS Raphaëlle</option>
+              <option value="MAGRINI Alessandra">MAGRINI Alessandra</option>
+              <option value="RIVERA Eva">RIVERA Eva</option>
+            </select>
+          </div>
+
+          <div class="input_box input_text input_box_bleu">
+            <label for="adherent_eleve5_droitimage">Acceptez-vous la diffusion des images?</label>
+            <select id="adherent_eleve5_droitimage" name="adherent_eleve5_droitimage">
+              <option value="" selected></option>
+              <option value="oui">Oui</option>
+              <option value="non">Non</option>
+            </select>
+          </div>
         </div>
-
-        <div class="">
-          <label for="adherent_eleve5_prenom">Prénom</label>
-          <input type="date" name="adherent_eleve5_prenom" id="adherent_eleve5_prenom">
+        <div class="grid_3inputs">
+          <div class="input_box input_text input_box_gris">
+            <label for="adherent_eleve5_contactsup_nom">Autre parent à contacter : Nom</label>
+            <input type="text" name="adherent_eleve5_contactsup_nom" id="adherent_eleve5_contactsup_nom">
+          </div>
+  
+          <div class="input_box input_text input_box_gris">
+            <label for="adherent_eleve5_contactsup_prenom">Prénom</label>
+            <input type="text" name="adherent_eleve5_contactsup_prenom" id="adherent_eleve5_contactsup_prenom">
+          </div>
+  
+          <div class="input_box input_text input_box_gris">
+            <label for="adherent_eleve5_contactsup_mail">Mail</label>
+            <input type="text" name="adherent_eleve5_contactsup_mail" id="adherent_eleve5_contactsup_mail">
+          </div>
         </div>
-
-        <div class="">
-          <label for="adherent_eleve5_datenaissance">Date de naissance</label>
-          <input type="text" name="adherent_eleve5_datenaissance" id="adherent_eleve5_datenaissance">
-        </div>
-
-        <div class="">
-          <label for="adherent_eleve5_contactsup_nom">Contact supplémentaite, Nom :</label>
-          <input type="text" name="adherent_eleve5_contactsup_nom" id="adherent_eleve5_contactsup_nom">
-        </div>
-
-        <div class="">
-          <label for="adherent_eleve5_contactsup_prenom">Prénom</label>
-          <input type="text" name="adherent_eleve5_contactsup_prenom" id="adherent_eleve5_contactsup_prenom">
-        </div>
-
-        <div class="">
-          <label for="adherent_eleve5_contactsup_mail">Mail</label>
-          <input type="text" name="adherent_eleve5_contactsup_mail" id="adherent_eleve5_contactsup_mail">
-        </div>
-
-        <label for="adherent_eleve5_InstrumentA">Pour l'instrument</label>
-        <select id="adherent_eleve5_InstrumentA" name="adherent_eleve5_InstrumentA">
-          <option value="" selected></option>
-          <option value="Alto">Alto</option>
-          <option value="Contrebasse">Contrebasse</option>
-          <option value="Flûte traversière">Flûte traversière</option>
-          <option value="Guitare">Guitare</option>
-          <option value="Harpe">Harpe</option>
-          <option value="Piano">Piano</option>
-          <option value="Trompette">Trompette</option>
-          <option value="Violon">Violon</option>
-          <option value="Violoncelle">Violoncelle</option>
-        </select>
-
-        <label for="adherent_eleve5_InstrumentA_cahier">Cahier</label>
-        <select id="adherent_eleve5_InstrumentA_cahier" name="adherent_eleve5_InstrumentA_cahier">
-          <option value="" selected></option>
-          <option value="Pré-Twinkle">Pré-Twinkle (débutant)</option>
-          <option value="Cahier 1">Cahier 1</option>
-          <option value="Cahier 2">Cahier 2</option>
-          <option value="Cahier 3">Cahier 3</option>
-          <option value="Cahier 4">Cahier 4</option>
-          <option value="Cahier 5">Cahier 5</option>
-          <option value="Cahier 6">Cahier 6</option>
-          <option value="Cahier 7">Cahier 7</option>
-          <option value="Cahier 8">Cahier 8</option>
-          <option value="Cahier 9">Cahier 9</option>
-          <option value="Cahier 10">Cahier 10</option>
-        </select>
-
-        <label for="adherent_eleve5_InstrumentA_prof">Professeur</label>
-        <select id="adherent_eleve5_InstrumentA_prof" name="adherent_eleve5_InstrumentA_prof">
-          <option value="" selected></option>
-          <option value="basmadjianmuriel">BASMADJIAN Muriel</option>
-          <option value="denisraphaelle">DENIS Raphaëlle</option>
-          <option value="magrinialessandra">MAGRINI Alessandra</option>
-          <option value="riveraeva">RIVERA Eva</option>
-          <option value="basmadjianmuriel">BASMADJIAN Muriel</option>
-          <option value="denisraphaelle">DENIS Raphaëlle</option>
-          <option value="magrinialessandra">MAGRINI Alessandra</option>
-          <option value="riveraeva">RIVERA Eva</option>
-          <option value="basmadjianmuriel">BASMADJIAN Muriel</option>
-          <option value="denisraphaelle">DENIS Raphaëlle</option>
-          <option value="magrinialessandra">MAGRINI Alessandra</option>
-          <option value="riveraeva">RIVERA Eva</option>
-        </select>
-
-        <label for="adherent_eleve5_InstrumentB">Deuxième instrument</label>
-        <select id="adherent_eleve5_InstrumentB" name="adherent_eleve5_InstrumentB">
-          <option value="" selected></option>
-          <option value="Alto">Alto</option>
-          <option value="Contrebasse">Contrebasse</option>
-          <option value="Flûte traversière">Flûte traversière</option>
-          <option value="Guitare">Guitare</option>
-          <option value="Harpe">Harpe</option>
-          <option value="Piano">Piano</option>
-          <option value="Trompette">Trompette</option>
-          <option value="Violon">Violon</option>
-          <option value="Violoncelle">Violoncelle</option>
-        </select>
-
-        <label for="adherent_eleve5_InstrumentB_cahier">Cahier</label>
-        <select id="adherent_eleve5_InstrumentB_cahier" name="adherent_eleve5_InstrumentB_cahier">
-            <option value="" selected></option>
-            <option value="Pré-Twinkle">Pré-Twinkle (débutant)</option>
-            <option value="Cahier 1">Cahier 1</option>
-            <option value="Cahier 2">Cahier 2</option>
-            <option value="Cahier 3">Cahier 3</option>
-            <option value="Cahier 4">Cahier 4</option>
-            <option value="Cahier 5">Cahier 5</option>
-            <option value="Cahier 6">Cahier 6</option>
-            <option value="Cahier 7">Cahier 7</option>
-            <option value="Cahier 8">Cahier 8</option>
-            <option value="Cahier 9">Cahier 9</option>
-            <option value="Cahier 10">Cahier 10</option>
-        </select>
-
-        <label for="adherent_eleve5_InstrumentB_prof">Professeur</label>
-        <select id="adherent_eleve5_InstrumentB_prof" name="adherent_eleve5_InstrumentB_prof">
-          <option value="" selected></option>
-          <option value="basmadjianmuriel">BASMADJIAN Muriel</option>
-          <option value="denisraphaelle">DENIS Raphaëlle</option>
-          <option value="magrinialessandra">MAGRINI Alessandra</option>
-          <option value="riveraeva">RIVERA Eva</option>
-          <option value="basmadjianmuriel">BASMADJIAN Muriel</option>
-          <option value="denisraphaelle">DENIS Raphaëlle</option>
-          <option value="magrinialessandra">MAGRINI Alessandra</option>
-          <option value="riveraeva">RIVERA Eva</option>
-          <option value="basmadjianmuriel">BASMADJIAN Muriel</option>
-          <option value="denisraphaelle">DENIS Raphaëlle</option>
-          <option value="magrinialessandra">MAGRINI Alessandra</option>
-          <option value="riveraeva">RIVERA Eva</option>
-        </select>
-
-        <label for="adherent_eleve5_droitimage">Acceptez-vous la diffusion des images et/ou vidéos ?</label>
-        <select id="adherent_eleve5_droitimage" name="adherent_eleve5_droitimage">
-          <option value="" selected></option>
-          <option value="oui">Oui</option>
-          <option value="non">Non</option>
-        </select>
 
       </div>
+
+
 
     </section>
 

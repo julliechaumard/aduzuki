@@ -19,12 +19,58 @@
         <p><%= err_mail_form_adhesion_1 %></p>
         <p><%= err_mail_form_adhesion_2 %></p>
         <p><%= err_mail_form_adhesion_3 %></p>
+        <p><%= err_mail_form_adhesion_4 %></p>
       </div>
     <% }; %>
 
       
     <!-- lE formuaire -->
     <%- include('../template_parts/adhesion/check_mail')%>
+
+    <!-- ------------------------- -->
+    <!-- Explication aux visiteurs -->
+    <!-- ------------------------- -->
+
+    <!-- Trigger/Open The Modal -->
+    <div id="open_modal" class="open_modal">
+      <p>En savoir plus sur ce formulaire</p>
+    </div>
+
+    <!-- The Modal -->
+    <section id="prelude" class="prelude">
+      <div class="prelude_content">
+        <span class="prelude_close">&times;</span>
+        <p>Cette page va vous permettre d'adhérer à l'Association Française Suzuki pour le Pédagogie.</p>
+        <br>
+        <p><span class="gras">Cette adhésion va comprendre les étapes suivantes :</span></p>
+        <ol>
+          <li>renseigner toutes les informations utiles. Les informations vont s'enregistrer dans la base de données de l'Association,</li>
+          <li>payer votre adésion,</li>
+          <li>recevoir un courriel avec le status de votre adhésion.</li>
+        </ol>
+        <br>
+        <p><span class="gras">Vous allez rempli ce fomulaire que vous soyez :</span></span></p>
+        <ul>
+          <li>un adulte qui inscrit ses enfants pour que son professeur lui enseigne la musique en suivant cette pédagogie,</li>
+          <li>un professeur qui s'inscrit pour donner des cours avec la pédagogie,</li>
+          <li>un professeur qui veut apprendre la pédagogie</li>
+          <li>un des ces professeurs et que vous inscrivez également vos enfants pour que son professeur lui enseigne la musique en suivant cette pédagogie.</li>
+          <li>toutes personnes qui voudra suivre les stages ou les événements organisés par l'Association devra être adhérent.</li>
+        </ul>
+        <br>
+        <p>Les informations receuillies par le formulaire seront conservées par l'Association.</p>
+        <p>L'association ne transmettra jamais les informations receuillies à une autre personne ou organisme</p>
+        <p>Contacter l'Association pour toutes questions sur vos données : mise à jour, suppression</p>
+        <br>
+        <p>Ce site utilise 1 cookie qui servira pour garder votre session ouverte sur votre navigateur le temps de remplir le formulaire et de passer par la page paiement et la page finale.</p>
+        <p>Ce cookie servira uniquement à cette fin et ne sera en aucune manière transmise à un organisme tiers.</p>
+        <p>Si vous n'accepter pas ce cookie vous ne pourrez pas vous inscrire via ce formulaire car le processus ne fonctionnera pas. Vous pouvez dans ce cas simplement fermer la page et il partira</p>
+      </div>
+    </section>
+
+
+
+
 
   </main>
 
@@ -42,5 +88,7 @@
   <%- include('../template_parts/footer')%>
 
 </body>
+ <!-- JAVASCRIPT d'EXECUTION -->
+ <script src="/public/js/accueil_modal.js"></script>
 
 </html>

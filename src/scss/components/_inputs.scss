@@ -18,25 +18,7 @@
         padding-right: 10px;
         background-color: $color_blanc;
     }
-    input,input[type=text],input[type=tel], select {
-        padding-top: 16px;
-        padding-bottom: 13px;
-        padding-left: 16px;
-        padding-right: 13px;
-        background-color: $color_blanc;
-        border: 2px solid $color_noir_fonce;
-        outline: none;
-            &:focus-visible, &:focus, &:focus-within, &:hover, &:focus, &:active, &:visited, &:target {
-                background-color: $color_blanc !important;
-                border: 2px solid $color_noir_fonce;
-                outline: none;
-            }
-            &:-webkit-autofill, &:-webkit-autofill:hover, &:-webkit-autofill:focus, &:-webkit-autofill:active, &:-webkit-autofill:focus-visible, &:-webkit-autofill:focus-within, &:-webkit-autofill:visited, &:target {
-                box-shadow: 0 0 0 30px white inset !important;
-            }
 
-        border-radius: 5px;
-    }
     input[type=email] {
         padding-top: 19px;
         padding-bottom: 16px;
@@ -57,13 +39,20 @@
         border-radius: 5px;
         color: $color_noir_fonce;
     }
-    input[type=text],input[type=tel],input[type=date], select {
+    input,input[type=text],input[type=tel],input[type=date], select {
+        @include media_max(phone){
+            min-width: 240px;
+        }
+        @include media_min(phone){
+            min-width: 330px;
+        }
+        max-width: 500px;
         padding-top: 14px;
         padding-bottom: 6px;
         padding-left: 10px;
         padding-right: 8px;
         background-color: $color_blanc;
-        border: 1.8px solid $color_gris_fonce;
+        border-radius: 5px;
         outline: none;
             &:focus-visible, &:focus, &:focus-within, &:hover, &:focus, &:active, &:visited, &:target {
                 background-color: $color_blanc !important;
@@ -73,15 +62,28 @@
             &:-webkit-autofill, &:-webkit-autofill:hover, &:-webkit-autofill:focus, &:-webkit-autofill:active, &:-webkit-autofill:focus-visible, &:-webkit-autofill:focus-within, &:-webkit-autofill:visited, &:target {
                 box-shadow: 0 0 0 30px white inset !important;
             }
-
-        border-radius: 5px;
-        color: $color_noir_clair;
-        &:-webkit-autofill, &:-webkit-autofill:hover, &:-webkit-autofill:focus, &:-webkit-autofill:active, &:-webkit-autofill:focus-visible, &:-webkit-autofill:focus-within, &:-webkit-autofill:visited, &:target {
-            -webkit-text-fill-color: $color_noir_clair;
-        }
+        
     }
 
 }
+.input_box_gris {
+    label {
+        color: $color_gris_fonce;
+    }
+    input,input[type=text],input[type=tel],input[type=date], select {
+        border: 1.8px solid $color_gris_fonce;
+    }
+}
+.input_box_bleu {
+    label {
+        color: $color_bleu_clair;
+    }
+    input,input[type=text],input[type=tel],input[type=date], select {
+        border: 1.8px solid $color_bleu_fonce_1;
+    }
+}
+
+
 
 /* FORMAT DU CONTENUE DU CHAMP DE SAISIE */
 /* ***************************************** */
@@ -113,19 +115,13 @@
 .input_text {
     label {
         font-size: 16px;
-        color: $color_gris_fonce;
     }
-    input[type="text"],input[type=tel],input[type=date], select {
-       
-        @include media_max(phone){
-            min-width: 240px;
-        }
-        @include media_min(phone){
-            min-width: 330px;
-        }
-        max-width: 500px;
+    input,input[type=text],input[type=tel],input[type=date], select {
         font-size: 16px;
-        
+        color: $color_noir_clair;
+        &:-webkit-autofill, &:-webkit-autofill:hover, &:-webkit-autofill:focus, &:-webkit-autofill:active, &:-webkit-autofill:focus-visible, &:-webkit-autofill:focus-within, &:-webkit-autofill:visited, &:target {
+            -webkit-text-fill-color: $color_noir_clair;
+        }
         &::placeholder {
             font-family: cabin_italic;
             font-size: 12px;
@@ -133,6 +129,7 @@
         }
     }
 }
+
 
 
 
@@ -165,11 +162,11 @@
 
 /* ***************************************** */
 /* ***************************************** */
-/* BUTTON                                     */
+/* BUTTONS                                     */
 /* ***************************************** */
 /* ***************************************** */
 
-button {
+.button_icone {
     appearance: none;
     width: 170px;
     height: 60px;
@@ -191,4 +188,18 @@ button {
         font-size: 17px;
     }
 
+}
+
+.button_text {
+    appearance: none;
+    width: 100px;
+    height: 35px;
+    margin: 0;
+    box-shadow: -10px 16px 24px -18px rgb(0 0 0 / 60%);
+    border: none;
+    border-radius: 20px;
+    font: inherit;
+    background-color: $color_rouge;
+    color: $color_blanc;
+    font-size: 15px;
 }

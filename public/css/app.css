@@ -229,6 +229,28 @@ body {
 /*
 @media (max-width: 9999px)
 */
+main {
+  max-width: 1800px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 85px;
+}
+@media (min-width: 1100px) {
+  main {
+    min-height: 400px;
+  }
+}
+@media (max-width: 1100px) {
+  main {
+    min-height: 340px;
+  }
+}
+@media (max-width: 330px) {
+  main {
+    min-height: 230px;
+  }
+}
+
 header {
   max-width: 1800px;
   margin-left: auto;
@@ -253,6 +275,10 @@ header p {
   font-family: cabin_bold;
   font-size: 24px;
   color: #1c1c1c;
+}
+header p .soft {
+  font-family: cabin_regular;
+  color: #707070;
 }
 
 footer {
@@ -280,24 +306,6 @@ footer {
   padding-right: 10px;
   background-color: white;
 }
-.input_box input, .input_box input[type=text], .input_box input[type=tel], .input_box select {
-  padding-top: 16px;
-  padding-bottom: 13px;
-  padding-left: 16px;
-  padding-right: 13px;
-  background-color: white;
-  border: 2px solid #454343;
-  outline: none;
-  border-radius: 5px;
-}
-.input_box input:focus-visible, .input_box input:focus, .input_box input:focus-within, .input_box input:hover, .input_box input:focus, .input_box input:active, .input_box input:visited, .input_box input:target, .input_box input[type=text]:focus-visible, .input_box input[type=text]:focus, .input_box input[type=text]:focus-within, .input_box input[type=text]:hover, .input_box input[type=text]:focus, .input_box input[type=text]:active, .input_box input[type=text]:visited, .input_box input[type=text]:target, .input_box input[type=tel]:focus-visible, .input_box input[type=tel]:focus, .input_box input[type=tel]:focus-within, .input_box input[type=tel]:hover, .input_box input[type=tel]:focus, .input_box input[type=tel]:active, .input_box input[type=tel]:visited, .input_box input[type=tel]:target, .input_box select:focus-visible, .input_box select:focus, .input_box select:focus-within, .input_box select:hover, .input_box select:focus, .input_box select:active, .input_box select:visited, .input_box select:target {
-  background-color: white !important;
-  border: 2px solid #454343;
-  outline: none;
-}
-.input_box input:-webkit-autofill, .input_box input:-webkit-autofill:hover, .input_box input:-webkit-autofill:focus, .input_box input:-webkit-autofill:active, .input_box input:-webkit-autofill:focus-visible, .input_box input:-webkit-autofill:focus-within, .input_box input:-webkit-autofill:visited, .input_box input:target, .input_box input[type=text]:-webkit-autofill, .input_box input[type=text]:-webkit-autofill:hover, .input_box input[type=text]:-webkit-autofill:focus, .input_box input[type=text]:-webkit-autofill:active, .input_box input[type=text]:-webkit-autofill:focus-visible, .input_box input[type=text]:-webkit-autofill:focus-within, .input_box input[type=text]:-webkit-autofill:visited, .input_box input[type=text]:target, .input_box input[type=tel]:-webkit-autofill, .input_box input[type=tel]:-webkit-autofill:hover, .input_box input[type=tel]:-webkit-autofill:focus, .input_box input[type=tel]:-webkit-autofill:active, .input_box input[type=tel]:-webkit-autofill:focus-visible, .input_box input[type=tel]:-webkit-autofill:focus-within, .input_box input[type=tel]:-webkit-autofill:visited, .input_box input[type=tel]:target, .input_box select:-webkit-autofill, .input_box select:-webkit-autofill:hover, .input_box select:-webkit-autofill:focus, .input_box select:-webkit-autofill:active, .input_box select:-webkit-autofill:focus-visible, .input_box select:-webkit-autofill:focus-within, .input_box select:-webkit-autofill:visited, .input_box select:target {
-  box-shadow: 0 0 0 30px white inset !important;
-}
 .input_box input[type=email] {
   padding-top: 19px;
   padding-bottom: 16px;
@@ -317,27 +325,47 @@ footer {
 .input_box input[type=email]:-webkit-autofill, .input_box input[type=email]:-webkit-autofill:hover, .input_box input[type=email]:-webkit-autofill:focus, .input_box input[type=email]:-webkit-autofill:active, .input_box input[type=email]:-webkit-autofill:focus-visible, .input_box input[type=email]:-webkit-autofill:focus-within, .input_box input[type=email]:-webkit-autofill:visited, .input_box input[type=email]:target {
   box-shadow: 0 0 0 30px white inset !important;
 }
-.input_box input[type=text], .input_box input[type=tel], .input_box input[type=date], .input_box select {
+.input_box input, .input_box input[type=text], .input_box input[type=tel], .input_box input[type=date], .input_box select {
+  max-width: 500px;
   padding-top: 14px;
   padding-bottom: 6px;
   padding-left: 10px;
   padding-right: 8px;
   background-color: white;
-  border: 1.8px solid #707070;
-  outline: none;
   border-radius: 5px;
-  color: #1c1c1c;
+  outline: none;
 }
-.input_box input[type=text]:focus-visible, .input_box input[type=text]:focus, .input_box input[type=text]:focus-within, .input_box input[type=text]:hover, .input_box input[type=text]:focus, .input_box input[type=text]:active, .input_box input[type=text]:visited, .input_box input[type=text]:target, .input_box input[type=tel]:focus-visible, .input_box input[type=tel]:focus, .input_box input[type=tel]:focus-within, .input_box input[type=tel]:hover, .input_box input[type=tel]:focus, .input_box input[type=tel]:active, .input_box input[type=tel]:visited, .input_box input[type=tel]:target, .input_box input[type=date]:focus-visible, .input_box input[type=date]:focus, .input_box input[type=date]:focus-within, .input_box input[type=date]:hover, .input_box input[type=date]:focus, .input_box input[type=date]:active, .input_box input[type=date]:visited, .input_box input[type=date]:target, .input_box select:focus-visible, .input_box select:focus, .input_box select:focus-within, .input_box select:hover, .input_box select:focus, .input_box select:active, .input_box select:visited, .input_box select:target {
+@media (max-width: 330px) {
+  .input_box input, .input_box input[type=text], .input_box input[type=tel], .input_box input[type=date], .input_box select {
+    min-width: 240px;
+  }
+}
+@media (min-width: 330px) {
+  .input_box input, .input_box input[type=text], .input_box input[type=tel], .input_box input[type=date], .input_box select {
+    min-width: 330px;
+  }
+}
+.input_box input:focus-visible, .input_box input:focus, .input_box input:focus-within, .input_box input:hover, .input_box input:focus, .input_box input:active, .input_box input:visited, .input_box input:target, .input_box input[type=text]:focus-visible, .input_box input[type=text]:focus, .input_box input[type=text]:focus-within, .input_box input[type=text]:hover, .input_box input[type=text]:focus, .input_box input[type=text]:active, .input_box input[type=text]:visited, .input_box input[type=text]:target, .input_box input[type=tel]:focus-visible, .input_box input[type=tel]:focus, .input_box input[type=tel]:focus-within, .input_box input[type=tel]:hover, .input_box input[type=tel]:focus, .input_box input[type=tel]:active, .input_box input[type=tel]:visited, .input_box input[type=tel]:target, .input_box input[type=date]:focus-visible, .input_box input[type=date]:focus, .input_box input[type=date]:focus-within, .input_box input[type=date]:hover, .input_box input[type=date]:focus, .input_box input[type=date]:active, .input_box input[type=date]:visited, .input_box input[type=date]:target, .input_box select:focus-visible, .input_box select:focus, .input_box select:focus-within, .input_box select:hover, .input_box select:focus, .input_box select:active, .input_box select:visited, .input_box select:target {
   background-color: white !important;
   border: 2px solid #454343;
   outline: none;
 }
-.input_box input[type=text]:-webkit-autofill, .input_box input[type=text]:-webkit-autofill:hover, .input_box input[type=text]:-webkit-autofill:focus, .input_box input[type=text]:-webkit-autofill:active, .input_box input[type=text]:-webkit-autofill:focus-visible, .input_box input[type=text]:-webkit-autofill:focus-within, .input_box input[type=text]:-webkit-autofill:visited, .input_box input[type=text]:target, .input_box input[type=tel]:-webkit-autofill, .input_box input[type=tel]:-webkit-autofill:hover, .input_box input[type=tel]:-webkit-autofill:focus, .input_box input[type=tel]:-webkit-autofill:active, .input_box input[type=tel]:-webkit-autofill:focus-visible, .input_box input[type=tel]:-webkit-autofill:focus-within, .input_box input[type=tel]:-webkit-autofill:visited, .input_box input[type=tel]:target, .input_box input[type=date]:-webkit-autofill, .input_box input[type=date]:-webkit-autofill:hover, .input_box input[type=date]:-webkit-autofill:focus, .input_box input[type=date]:-webkit-autofill:active, .input_box input[type=date]:-webkit-autofill:focus-visible, .input_box input[type=date]:-webkit-autofill:focus-within, .input_box input[type=date]:-webkit-autofill:visited, .input_box input[type=date]:target, .input_box select:-webkit-autofill, .input_box select:-webkit-autofill:hover, .input_box select:-webkit-autofill:focus, .input_box select:-webkit-autofill:active, .input_box select:-webkit-autofill:focus-visible, .input_box select:-webkit-autofill:focus-within, .input_box select:-webkit-autofill:visited, .input_box select:target {
+.input_box input:-webkit-autofill, .input_box input:-webkit-autofill:hover, .input_box input:-webkit-autofill:focus, .input_box input:-webkit-autofill:active, .input_box input:-webkit-autofill:focus-visible, .input_box input:-webkit-autofill:focus-within, .input_box input:-webkit-autofill:visited, .input_box input:target, .input_box input[type=text]:-webkit-autofill, .input_box input[type=text]:-webkit-autofill:hover, .input_box input[type=text]:-webkit-autofill:focus, .input_box input[type=text]:-webkit-autofill:active, .input_box input[type=text]:-webkit-autofill:focus-visible, .input_box input[type=text]:-webkit-autofill:focus-within, .input_box input[type=text]:-webkit-autofill:visited, .input_box input[type=text]:target, .input_box input[type=tel]:-webkit-autofill, .input_box input[type=tel]:-webkit-autofill:hover, .input_box input[type=tel]:-webkit-autofill:focus, .input_box input[type=tel]:-webkit-autofill:active, .input_box input[type=tel]:-webkit-autofill:focus-visible, .input_box input[type=tel]:-webkit-autofill:focus-within, .input_box input[type=tel]:-webkit-autofill:visited, .input_box input[type=tel]:target, .input_box input[type=date]:-webkit-autofill, .input_box input[type=date]:-webkit-autofill:hover, .input_box input[type=date]:-webkit-autofill:focus, .input_box input[type=date]:-webkit-autofill:active, .input_box input[type=date]:-webkit-autofill:focus-visible, .input_box input[type=date]:-webkit-autofill:focus-within, .input_box input[type=date]:-webkit-autofill:visited, .input_box input[type=date]:target, .input_box select:-webkit-autofill, .input_box select:-webkit-autofill:hover, .input_box select:-webkit-autofill:focus, .input_box select:-webkit-autofill:active, .input_box select:-webkit-autofill:focus-visible, .input_box select:-webkit-autofill:focus-within, .input_box select:-webkit-autofill:visited, .input_box select:target {
   box-shadow: 0 0 0 30px white inset !important;
 }
-.input_box input[type=text]:-webkit-autofill, .input_box input[type=text]:-webkit-autofill:hover, .input_box input[type=text]:-webkit-autofill:focus, .input_box input[type=text]:-webkit-autofill:active, .input_box input[type=text]:-webkit-autofill:focus-visible, .input_box input[type=text]:-webkit-autofill:focus-within, .input_box input[type=text]:-webkit-autofill:visited, .input_box input[type=text]:target, .input_box input[type=tel]:-webkit-autofill, .input_box input[type=tel]:-webkit-autofill:hover, .input_box input[type=tel]:-webkit-autofill:focus, .input_box input[type=tel]:-webkit-autofill:active, .input_box input[type=tel]:-webkit-autofill:focus-visible, .input_box input[type=tel]:-webkit-autofill:focus-within, .input_box input[type=tel]:-webkit-autofill:visited, .input_box input[type=tel]:target, .input_box input[type=date]:-webkit-autofill, .input_box input[type=date]:-webkit-autofill:hover, .input_box input[type=date]:-webkit-autofill:focus, .input_box input[type=date]:-webkit-autofill:active, .input_box input[type=date]:-webkit-autofill:focus-visible, .input_box input[type=date]:-webkit-autofill:focus-within, .input_box input[type=date]:-webkit-autofill:visited, .input_box input[type=date]:target, .input_box select:-webkit-autofill, .input_box select:-webkit-autofill:hover, .input_box select:-webkit-autofill:focus, .input_box select:-webkit-autofill:active, .input_box select:-webkit-autofill:focus-visible, .input_box select:-webkit-autofill:focus-within, .input_box select:-webkit-autofill:visited, .input_box select:target {
-  -webkit-text-fill-color: #1c1c1c;
+
+.input_box_gris label {
+  color: #707070;
+}
+.input_box_gris input, .input_box_gris input[type=text], .input_box_gris input[type=tel], .input_box_gris input[type=date], .input_box_gris select {
+  border: 1.8px solid #707070;
+}
+
+.input_box_bleu label {
+  color: #7984D1;
+}
+.input_box_bleu input, .input_box_bleu input[type=text], .input_box_bleu input[type=tel], .input_box_bleu input[type=date], .input_box_bleu select {
+  border: 1.8px solid #1B299A;
 }
 
 /* FORMAT DU CONTENUE DU CHAMP DE SAISIE */
@@ -368,23 +396,15 @@ footer {
 
 .input_text label {
   font-size: 16px;
-  color: #707070;
 }
-.input_text input[type=text], .input_text input[type=tel], .input_text input[type=date], .input_text select {
-  max-width: 500px;
+.input_text input, .input_text input[type=text], .input_text input[type=tel], .input_text input[type=date], .input_text select {
   font-size: 16px;
+  color: #1c1c1c;
 }
-@media (max-width: 330px) {
-  .input_text input[type=text], .input_text input[type=tel], .input_text input[type=date], .input_text select {
-    min-width: 240px;
-  }
+.input_text input:-webkit-autofill, .input_text input:-webkit-autofill:hover, .input_text input:-webkit-autofill:focus, .input_text input:-webkit-autofill:active, .input_text input:-webkit-autofill:focus-visible, .input_text input:-webkit-autofill:focus-within, .input_text input:-webkit-autofill:visited, .input_text input:target, .input_text input[type=text]:-webkit-autofill, .input_text input[type=text]:-webkit-autofill:hover, .input_text input[type=text]:-webkit-autofill:focus, .input_text input[type=text]:-webkit-autofill:active, .input_text input[type=text]:-webkit-autofill:focus-visible, .input_text input[type=text]:-webkit-autofill:focus-within, .input_text input[type=text]:-webkit-autofill:visited, .input_text input[type=text]:target, .input_text input[type=tel]:-webkit-autofill, .input_text input[type=tel]:-webkit-autofill:hover, .input_text input[type=tel]:-webkit-autofill:focus, .input_text input[type=tel]:-webkit-autofill:active, .input_text input[type=tel]:-webkit-autofill:focus-visible, .input_text input[type=tel]:-webkit-autofill:focus-within, .input_text input[type=tel]:-webkit-autofill:visited, .input_text input[type=tel]:target, .input_text input[type=date]:-webkit-autofill, .input_text input[type=date]:-webkit-autofill:hover, .input_text input[type=date]:-webkit-autofill:focus, .input_text input[type=date]:-webkit-autofill:active, .input_text input[type=date]:-webkit-autofill:focus-visible, .input_text input[type=date]:-webkit-autofill:focus-within, .input_text input[type=date]:-webkit-autofill:visited, .input_text input[type=date]:target, .input_text select:-webkit-autofill, .input_text select:-webkit-autofill:hover, .input_text select:-webkit-autofill:focus, .input_text select:-webkit-autofill:active, .input_text select:-webkit-autofill:focus-visible, .input_text select:-webkit-autofill:focus-within, .input_text select:-webkit-autofill:visited, .input_text select:target {
+  -webkit-text-fill-color: #1c1c1c;
 }
-@media (min-width: 330px) {
-  .input_text input[type=text], .input_text input[type=tel], .input_text input[type=date], .input_text select {
-    min-width: 330px;
-  }
-}
-.input_text input[type=text]::placeholder, .input_text input[type=tel]::placeholder, .input_text input[type=date]::placeholder, .input_text select::placeholder {
+.input_text input::placeholder, .input_text input[type=text]::placeholder, .input_text input[type=tel]::placeholder, .input_text input[type=date]::placeholder, .input_text select::placeholder {
   font-family: cabin_italic;
   font-size: 12px;
   color: #A2A0A0;
@@ -416,10 +436,10 @@ footer {
 
 /* ***************************************** */
 /* ***************************************** */
-/* BUTTON                                     */
+/* BUTTONS                                     */
 /* ***************************************** */
 /* ***************************************** */
-button {
+.button_icone {
   appearance: none;
   width: 170px;
   height: 60px;
@@ -431,15 +451,29 @@ button {
   background-color: #E73058;
   color: white;
 }
-button .btn_icone {
+.button_icone .btn_icone {
   font-family: montserrat_regular;
   font-size: 36px;
 }
-button .btn_texte {
+.button_icone .btn_texte {
   display: inline-block;
   transform: translateY(-7px);
   padding-left: 10px;
   font-size: 17px;
+}
+
+.button_text {
+  appearance: none;
+  width: 100px;
+  height: 35px;
+  margin: 0;
+  box-shadow: -10px 16px 24px -18px rgba(0, 0, 0, 0.6);
+  border: none;
+  border-radius: 20px;
+  font: inherit;
+  background-color: #E73058;
+  color: white;
+  font-size: 15px;
 }
 
 .erreur {
@@ -470,26 +504,87 @@ button .btn_texte {
   justify-self: center;
 }
 
-main {
-  max-width: 1800px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 85px;
+.open_modal {
+  display: grid;
+  justify-content: center;
+  margin-top: 150px;
+  text-decoration: underline;
 }
-@media (min-width: 1100px) {
-  main {
-    min-height: 400px;
-  }
+.open_modal p:hover {
+  cursor: pointer;
 }
-@media (max-width: 1100px) {
-  main {
-    min-height: 340px;
-  }
+
+.prelude {
+  /*display: grid;*/
+  /*justify-content: center;*/
+  /*margin-top: 150px;*/
+  /* **************************************************************** */
+  /* ** POUR FENETRE MODALE  ** */
+  /* **************************************************************** */
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Sit on top */
+  padding-top: 150px;
+  /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  overflow: auto;
+  /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0);
+  /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4);
+  /* Black w/ opacity */
+  /* **************************************************************** */
+  font-family: cabin_regular;
+  font-size: 15px;
 }
-@media (max-width: 330px) {
-  main {
-    min-height: 230px;
-  }
+.prelude .prelude_content {
+  /*max-width: 700px;*/
+  /* **************************************************************** */
+  /* ** POUR FENETRE MODALE  ** */
+  /* **************************************************************** */
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 5px solid #E73058;
+  border-radius: 20px;
+  width: 80%;
+  /* **************************************************************** */
+}
+.prelude ol {
+  margin-left: 20px;
+}
+.prelude ol li {
+  list-style-type: decimal;
+}
+.prelude ul {
+  margin-left: 20px;
+}
+.prelude ul li {
+  list-style-type: circle;
+}
+.prelude .gras {
+  font-family: cabin_semibold;
+}
+
+.prelude_close {
+  color: #E73058;
+  float: right;
+  font-size: 50px;
+}
+
+.prelude_close:hover,
+.prelude_close:focus {
+  color: #E73058;
+  text-decoration: none;
+  cursor: pointer;
 }
 
 .form_adhesion {
@@ -510,6 +605,10 @@ main {
 }
 .form_adhesion .input_checkbox {
   margin-bottom: 37px;
+}
+.form_adhesion .explication {
+  margin-bottom: 30px;
+  color: #101D77;
 }
 
 .grid_3inputs {
@@ -533,6 +632,242 @@ main {
 
 .hidden {
   display: none;
+}
+
+.paiement_explication {
+  max-width: 500px;
+  margin-top: 20px;
+  padding: 11px;
+  border-radius: 16px;
+  background-color: rgba(231, 48, 88, 0.1294117647);
+  font-size: 12px;
+  color: #707070;
+}
+
+.paiement_container {
+  display: grid;
+  grid-column-gap: 20px;
+  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-areas: ". paiement .";
+}
+.paiement_container .paiement {
+  grid-area: paiement;
+  border: 2px solid #E73058;
+  display: grid;
+  grid-column-gap: 20px;
+  grid-row-gap: 15px;
+  grid-template-columns: 1fr 3fr 4fr;
+  grid-template-rows: auto auto auto auto auto auto auto auto auto;
+  grid-template-areas: "paiement_titre paiement_titre paiement_titre" ". montant_cotisation_label montant_cotisation_euros_box" ". montant_don_label montant_don_euros_box" ". . don" ". montant_total_label montant_total_euros_box" ". paiement_mode ." ". paiement_mode_choix paiement_mode_choix_nocb" ".paiement_cb paiement_nocb" ". . paiement_nocb_form";
+}
+.paiement_container .paiement .paiement_titre {
+  grid-area: paiement_titre;
+  margin-bottom: 30px;
+  padding-bottom: 5px;
+  padding-top: 5px;
+  background-color: #E73058;
+  color: white;
+  text-align: center;
+}
+.paiement_container .paiement .montant_cotisation_label {
+  grid-area: montant_cotisation_label;
+  align-self: center;
+  color: #A2A0A0;
+}
+.paiement_container .paiement .montant_cotisation_euros_box {
+  grid-area: montant_cotisation_euros_box;
+}
+.paiement_container .paiement .don {
+  grid-area: don;
+  margin-top: 22px;
+}
+.paiement_container .paiement .montant_don_label {
+  grid-area: montant_don_label;
+  align-self: center;
+  color: #A2A0A0;
+}
+.paiement_container .paiement .montant_don_euros_box {
+  grid-area: montant_don_euros_box;
+}
+.paiement_container .paiement .montant_total_label {
+  grid-area: montant_total_label;
+  align-self: center;
+}
+.paiement_container .paiement .montant_total_euros_box {
+  grid-area: montant_total_euros_box;
+}
+.paiement_container .paiement .paiement_mode {
+  grid-area: paiement_mode;
+  margin-top: 40px;
+}
+.paiement_container .paiement .paiement_mode_choix {
+  grid-area: paiement_mode_choix;
+}
+.paiement_container .paiement .paiement_mode_choix_nocb {
+  grid-area: paiement_mode_choix_nocb;
+}
+.paiement_container .paiement #paiement_cb {
+  grid-area: paiement_cb;
+}
+.paiement_container .paiement #paiement_nocb {
+  grid-area: paiement_nocb;
+}
+.paiement_container .paiement .paiement_nocb_choix {
+  display: flex;
+}
+.paiement_container .paiement .paiement_nocb_choix_cheque {
+  margin-left: 20px;
+}
+.paiement_container .paiement .open_modal_don {
+  display: grid;
+  justify-content: center;
+  margin-top: 6px;
+  margin-bottom: 45px;
+  text-decoration: underline;
+  font-size: 12px;
+}
+.paiement_container .paiement .open_modal_don p:hover {
+  cursor: pointer;
+}
+.paiement_container .paiement .montant_cotisation_euros {
+  display: inline-block;
+  padding-top: 8px;
+  padding-bottom: 6px;
+  padding-left: 10px;
+  padding-right: 8px;
+}
+.paiement_container .paiement .montant_total_label {
+  color: #E73058;
+}
+.paiement_container .paiement .montant_total_euros {
+  display: inline-block;
+  padding-top: 8px;
+  padding-bottom: 6px;
+  padding-left: 10px;
+  padding-right: 8px;
+  color: #E73058;
+}
+.paiement_container .paiement .paiement_nocb_form {
+  grid-area: paiement_nocb_form;
+  margin-bottom: 25px;
+  font-size: 13px;
+}
+.paiement_container .paiement .paiement_nocb_form .paiement_description {
+  margin-bottom: 3px;
+  font-family: montserrat_light;
+}
+.paiement_container .paiement .paiement_nocb_infos {
+  display: grid;
+  grid-template-rows: auto auto auto auto;
+  grid-row-gap: 25px;
+}
+.paiement_container .paiement .paiement_nocb_infos .nom_banque {
+  margin-top: 15px;
+}
+.paiement_container .paiement .euro_label {
+  padding-left: 8px;
+  color: #A2A0A0;
+}
+
+.adhesion_fin_container {
+  display: grid;
+  grid-column-gap: 20px;
+  grid-template-columns: 1fr 3fr 1fr;
+  grid-template-areas: ". adhesion_fin .";
+}
+.adhesion_fin_container .adhesion_fin {
+  grid-area: adhesion_fin;
+  display: grid;
+  grid-template-rows: auto auto auto;
+  row-gap: 30px;
+  grid-template-areas: "adhesion_fin_adresse" "adhesion_fin_description" "adhesion_fin_card";
+}
+.adhesion_fin_container .adhesion_fin .adhesion_fin_adresse {
+  grid-area: adhesion_fin_adresse;
+  justify-self: end;
+}
+.adhesion_fin_container .adhesion_fin .adhesion_fin_adresse .adhesion_fin_adresse_titre {
+  font-family: montserrat_semibold;
+}
+.adhesion_fin_container .adhesion_fin .adhesion_fin_adresse .adhesion_fin_adresse_infos {
+  margin-top: 10px;
+  font-family: montserrat_regular;
+}
+.adhesion_fin_container .adhesion_fin .adhesion_fin_adresse .adhesion_fin_adresse_identifiant {
+  margin-top: 15px;
+  font-family: montserrat_thin;
+}
+.adhesion_fin_container .adhesion_fin .adhesion_fin_adresse .adhesion_fin_adresse_identifiant .adhesion_fin_adresse_identifiant_bold {
+  font-family: montserrat_regular;
+}
+.adhesion_fin_container .adhesion_fin .adhesion_fin_adresse .adhesion_fin_date {
+  margin-top: 15px;
+  font-family: montserrat_thin;
+}
+.adhesion_fin_container .adhesion_fin .adhesion_fin_description {
+  grid-area: adhesion_fin_description;
+  margin-top: 60px;
+  text-align: center;
+}
+.adhesion_fin_container .adhesion_fin .adhesion_fin_description .adhesion_fin_description_identifiant {
+  margin-top: 20px;
+  font-family: montserrat_thin;
+  font-size: 13px;
+}
+.adhesion_fin_container .adhesion_fin .adhesion_fin_card {
+  grid-area: adhesion_fin_card;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 2fr;
+  grid-template-rows: auto auto auto auto;
+  row-gap: 30px;
+  grid-template-areas: "logo logo . adhesion_fin_card_description" ". adhesion_fin_card_identifiant adhesion_fin_card_identifiant adhesion_fin_card_identifiant" ". adhesion_fin_card_profil adhesion_fin_card_profil adhesion_fin_card_profil" ". adhesion_fin_paiement adhesion_fin_paiement adhesion_fin_paiement";
+  margin: 10%;
+  padding: 20px;
+  background-color: rgba(231, 48, 88, 0.1294117647);
+  border: 4px dashed #E73058;
+}
+.adhesion_fin_container .adhesion_fin .adhesion_fin_card .logo {
+  grid-area: logo;
+}
+.adhesion_fin_container .adhesion_fin .adhesion_fin_card .logo img {
+  width: 100%;
+}
+.adhesion_fin_container .adhesion_fin .adhesion_fin_card .adhesion_fin_card_description {
+  grid-area: adhesion_fin_card_description;
+  justify-self: end;
+  text-align: center;
+}
+.adhesion_fin_container .adhesion_fin .adhesion_fin_card .adhesion_fin_card_description .adhesion_fin_card_description_assoc {
+  margin-top: 5px;
+  font-family: montserrat_regular;
+  font-size: 14px;
+}
+.adhesion_fin_container .adhesion_fin .adhesion_fin_card .adhesion_fin_card_description .adhesion_fin_card_description_annee {
+  margin-top: 5px;
+  font-family: montserrat_light;
+  font-size: 12px;
+}
+.adhesion_fin_container .adhesion_fin .adhesion_fin_card .adhesion_fin_card_identifiant {
+  grid-area: adhesion_fin_card_identifiant;
+  margin-top: 14px;
+  font-family: montserrat_thin;
+}
+.adhesion_fin_container .adhesion_fin .adhesion_fin_card .adhesion_fin_card_identifiant .adhesion_fin_card_identifiant_mail {
+  padding-left: 10px;
+  font-family: montserrat_regular;
+  color: #E73058;
+}
+.adhesion_fin_container .adhesion_fin .adhesion_fin_card .adhesion_fin_card_profil {
+  grid-area: adhesion_fin_card_profil;
+  font-family: montserrat_regular;
+}
+.adhesion_fin_container .adhesion_fin .adhesion_fin_card .adhesion_fin_card_profil ul li:before {
+  content: "- ";
+}
+.adhesion_fin_container .adhesion_fin .adhesion_fin_card .adhesion_fin_paiement {
+  grid-area: adhesion_fin_paiement;
+  font-family: montserrat_thin;
+  font-size: 13px;
 }
 
 /*# sourceMappingURL=app.css.map */

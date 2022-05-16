@@ -1,0 +1,80 @@
+<%- include('../template_parts/head')%>
+
+<body>
+    <%- include('../template_parts/header')%>
+    
+
+<main>
+
+    <section class="paiement_container">
+
+        <div class="paiement">
+
+            <div class="paiement_titre">
+                <p>PAIEMENT</p>
+            </div>
+
+            <div class="montant_cotisation_label">
+            <p>Montant de votre cotisation annuelle</p>
+            </div>
+            <div class="montant_cotisation_euros_box">
+            <div class="montant_cotisation_euros"><%= adherent_paiement_montant_adhesion %> <span class="euro_label"> euros</span></div>
+            </div>
+            
+
+            <form action="calcul_total" method="post" class="don">
+                <div class="input_box input_text input_box_gris">
+                    <label for="adherent_paiement_montant_don">Vous pouvez ajouter un don pour nous soutenir</label>
+                    <input type="number" name="adherent_paiement_montant_don" id="adherent_paiement_montant_don">
+                </div>
+                
+                <!-- ------------------------- -->
+                <!-- Explication DU DON  -->
+                <!-- ------------------------- -->
+
+                <!-- Trigger/Open The Modal -->
+                <div id="open_modal" class="open_modal_don">
+                    <p>En savoir plus sur le don</p>
+                </div>
+        
+                <!-- The Modal -->
+                <section id="prelude" class="prelude">
+                    <div class="prelude_content">
+                    <span class="prelude_close">&times;</span>
+                    <p>Votre don à l'Association Française Suzuki pour le Pédagogie.</p>
+                    <br>
+                    <p><span class="gras">Une attestation pour déduire son don de l'impôt :</span></p>
+                    <ol>
+                        <li>suite à votre inscription et votre paiement, vous recevrez un justificatif de don que vous pourrrez joindre à votre déclaration d'impôts.</li>
+                    </ol>
+                    <br>
+                    <p><span class="gras">Nous vous remercions pour votre don :</span></span></p>
+                    <ul>
+                        <li>les élèves et les professeurs pourront continuer à apprendre la musique avec la pédagogie Suzuki,</li>
+                   </ul>
+                    <br>
+                    </div>
+                </section>
+                
+
+                <button id="total_valider" type="submit" class="button_text">
+                    <span class="btn_texte">VALIDER</span>
+                </button>
+            </form>
+
+
+    
+    
+
+
+        </div>
+    </section>
+
+</main>
+
+</body>
+
+<!-- JAVASCRIPT d'EXECUTION -->
+<script src="/public/js/accueil_modal.js"></script>
+
+<%- include('../template_parts/footer')%>

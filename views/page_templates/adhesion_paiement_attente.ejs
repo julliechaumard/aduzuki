@@ -1,0 +1,98 @@
+<%- include('../template_parts/head')%>
+
+<body>
+
+  <!-- ---------------------------------- -->
+  <!-- HEADER -->
+  <!-- ---------------------------------- -->
+  <%- include('../template_parts/header')%>
+
+  <!-- ---------------------------------- -->
+  <!-- FORMULAIRE de vérification du mail -->
+  <!-- ---------------------------------- -->
+
+  <main>
+
+    <section class="adhesion_fin_container">
+
+      <div class="adhesion_fin">
+
+        <div class="adhesion_fin_adresse">
+          <div class="adhesion_fin_adresse_titre">
+            <p>Association Française pour la pédagogie Suzuki</p>
+          </div>
+          <div class="adhesion_fin_adresse_infos">
+            <p>Chez Anne PAGES<br>30 rue des Tattes<br>74500 PUBLIER <br>afpedagogiesuzuki@gmail.com</p>
+          </div>
+          <div class="adhesion_fin_adresse_identifiant">
+            <p>Numéro SIRET : <span class="adhesion_fin_adresse_identifiant_bold">123456789123</span></p>
+          </div>
+          <div class="adhesion_fin_date">
+            <p>Le <%= today %></p>
+          </div>
+        </div>
+      
+
+        <div class="adhesion_fin_description">
+          <div>
+            <p>Votre adhésion ne sera effective qu'à réception de votre règlement</p>
+          </div>
+          <div class="adhesion_fin_description_identifiant">
+            <p>Identifiant général à utiliser dans tous les formulaires d’inscription français et européens ou toutes communications avec l’Association.</p>
+          </div>
+        </div>
+
+        <div class="adhesion_fin_card">
+          
+          <div class="logo">
+            <img src="/public/images/logos/LogoSuzukiGris.png" alt="">
+          </div>
+
+          <div class="adhesion_fin_card_description">
+            <div>
+              <p>CARTE TEMPORAIRE</p>
+            </div>
+            <div class="adhesion_fin_card_description_assoc">
+              <p>Association Française </p>
+              <p>pour la pédagogie Suzuki</p>
+            </div>
+            <div class="adhesion_fin_card_description_annee">
+              <p>Année 2022/2023</p>
+            </div>
+          </div>
+
+          <div class="adhesion_fin_card_identifiant">
+            <p>IDENTIFIANT : <span class="adhesion_fin_card_identifiant_mail"><%= identifiant %></span></p>
+          </div>
+
+          <div class="adhesion_fin_card_profil">
+            <ul>
+              <li><%= profil1 %></li>
+              <% if(profil2) { %><li><%= profil2 %></li><% } %>
+              <% if(profil3) { %><li><%= profil3 %></li><% } %>
+            </ul>
+          </div>
+
+          <div class="adhesion_fin_paiement">
+            <p>Adhésion en attente de paiement par <span><%= adherent_paiement_mode %></p>
+          </div>
+          
+        </div>
+
+      </div>
+
+    </section>
+    
+  </main>
+
+
+
+
+  <!-- ---------------------------------- -->
+  <!-- FOOTER -->
+  <!-- ---------------------------------- -->
+  <%- include('../template_parts/footer')%>
+
+</body>
+
+</html>

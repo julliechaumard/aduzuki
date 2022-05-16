@@ -1,0 +1,16 @@
+main {
+    max-width: 1800px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 85px;
+
+    @include media_min("tablet"){
+        min-height: 400px;
+    }
+    @include media_max("tablet"){
+        min-height: 340px;
+    }
+    @include media_max("phone"){
+        min-height: 230px;
+    }
+}

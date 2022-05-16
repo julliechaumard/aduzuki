@@ -1,5 +1,10 @@
 console.log('bonjour Julie');
 console.log(__dirname);
+//// DATE
+const moment = require('moment');
+moment().format();
+moment.locale('fr');
+console.log(moment().format('L'));
 
 /////////////////////////////////////////////////
 // VARIABLES D'ENVIRONNEMENT
@@ -35,6 +40,10 @@ const session = require ('express-session');
 // EXPRESS
 //// app etant la variable qui désigne le projet
 const app = express();
+
+// JSON
+//// Read datas on API
+app.use(express.json());
 
 // BODY-PARSER
 //// Pour la méthode post du formulaire
@@ -110,4 +119,5 @@ app.use("/*", function(req, res){
 // port dans variable d'environnement OU (||) par défaut 8888
 const port = process.env.PORT || 8888;
 app.listen(port);
+
 

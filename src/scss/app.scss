@@ -8,9 +8,10 @@
 @import "base/fonts";
 
 
-//Global
 
+//Global
 @import "global/mediaqueries";
+@import "global/main";
 
 // vendors
 
@@ -24,6 +25,8 @@
 
 // Templates
 @import "templates/adhesion";
+@import "templates/paiement";
+@import "templates/adhesion_end";
 
 
 

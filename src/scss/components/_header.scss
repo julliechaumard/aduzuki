@@ -22,6 +22,10 @@ header {
         font-family: cabin_bold;
         font-size: 24px;
         color: $color_noir_clair;
+        .soft {
+            font-family: cabin_regular;
+            color: #707070;
+        }
     }
 
 }
